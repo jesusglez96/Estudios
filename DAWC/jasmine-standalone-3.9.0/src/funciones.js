@@ -73,3 +73,8 @@ function hexa2decimal(numhex) {
   let num = parseInt(numhex, 16);
   return num;
 }
+
+function gradoARadiane(grados) {
+  let radianes = (grados * Math.PI) / 180;
+  return radianes;
+}
