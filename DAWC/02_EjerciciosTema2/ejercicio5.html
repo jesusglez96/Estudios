@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 5</title>
+  </head>
+  <body>
+    <input type="button" value="testear" onclick="test()" />
+
+    <script>
+      function hexa2decimal(numhex) {
+        let num = parseInt(numhex, 16);
+        return num;
+      }
+
+      function test() {
+        let hexIntro = ["14", "36", "F", "A0", "3ED", "64"];
+        let hexSal = [20, 54, 15, 160, 1005, 100];
+
+        for (let i = 0; i < hexIntro.length; i++) {
+          let valor = hexa2decimal(hexIntro[i]);
+          if (valor) {
+            console.log(
+              `${hexIntro[i]} es ${valor} y se esperaba ${hexSal[i]}`
+            );
+          } else
+            console.log(
+              `${hexIntro[i]} es ${valor} y se esperaba ${hexSal[i]}`
+            );
+        }
+      }
+    </script>
+  </body>
+</html>

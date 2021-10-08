@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 7</title>
+  </head>
+  <body>
+    <p>
+      <script>
+        let num1, num2;
+        num1 = parseFloat(prompt("Ingrese el primer número:"));
+        num2 = parseFloat(prompt("Ingrese el segundo número:"));
+        if (num1 > num2) {
+          let suma, diferencia;
+          suma = num1 + num2;
+          diferencia = num1 - num2;
+          document.write("La suma es:" + suma);
+          document.write("<br>");
+          document.write("La diferencia es:" + diferencia);
+        } else {
+          let producto, division;
+          producto = num1 * num2;
+          division = num1 / num2;
+          document.write("El producto es " + producto);
+          document.write("<br>");
+          document.write(
+            "La división del primero respecto al segundo es:" + division
+          );
+        }
+      </script>
+    </p>
+
+    <p>
+      <script>
+        let notas = new Array(
+          parseInt(prompt("Ingrese cuantas notas quiere introducir: "))
+        );
+
+        for (let i = 0; i < notas.length; i++) {
+          notas[i] = parseFloat(prompt(`Introduzca la nota ${i + 1}`));
+        }
+
+        let suma;
+        notas.forEach((nota) => {
+          suma += nota;
+        });
+
+        let promedio;
+        promedio = suma / 3;
+        if (promedio >= 4) {
+          document.write("Regular");
+        } else {
+          document.write("Reprobado");
+        }
+      </script>
+    </p>
+
+    <p>
+      <script type="text/javascript">
+        let num;
+        num = parseInt(prompt("Ingrese un valor comprendido entre 1 y 999:"));
+        if (num < 10) {
+          document.write("El valor ingresado tiene un dígito");
+        } else if (num >= 10 && num < 100) {
+          document.write("El valor ingresado tiene dos dígitos");
+        } else {
+          document.write("El valor ingresado tiene tres dígitos");
+        }
+      </script>
+    </p>
+  </body>
+</html>

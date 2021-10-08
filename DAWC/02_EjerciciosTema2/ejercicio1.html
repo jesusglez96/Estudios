@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1</title>
+  </head>
+  <body>
+    <p>JavaScript template</p>
+    <span>Calcular nota</span>
+    <br />
+    <input type="button" value="testear" onclick="test()" />
+    <script>
+      function verCalificacion(nota) {
+        switch (nota) {
+          case 0:
+          case 1:
+          case 2:
+          case 3:
+          case 4:
+            return "Insuficiente";
+            break;
+
+          case 5:
+            return "Suficiente";
+            break;
+
+          case 6:
+            return "Bien";
+            break;
+
+          case 7:
+          case 8:
+            return "Notable";
+            break;
+          case 9:
+          case 10:
+            return "Sobresaliente";
+            break;
+
+          default:
+            return "Valor incorrecto";
+            break;
+        }
+      }
+
+      function test() {
+        for (let i = -1; i <= 11; i++) {
+          console.log(verCalificacion(i));
+        }
+      }
+    </script>
+  </body>
+</html>

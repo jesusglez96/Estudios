@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 6</title>
+  </head>
+  <body>
+    <p>
+      <script>
+        let notas = new Array(
+          parseInt(prompt("Ingrese cuantas notas quiere introducir: "))
+        );
+
+        for (let i = 0; i < notas.length; i++) {
+          notas[i] = parseFloat(prompt(`Introduzca la nota ${i + 1}`));
+        }
+
+        let suma;
+        notas.forEach((nota) => {
+          suma += nota;
+        });
+
+        let promedio;
+        promedio = suma / notas.length;
+        if (promedio >= 7) {
+          document.write("Promocionado");
+        } else document.write("Suspendido");
+      </script>
+    </p>
+    <p>
+      <script>
+        let clave1;
+        let clave2;
+        clave1 = prompt("Ingrese una clave:");
+        clave2 = prompt("Repita el ingreso de la clave:");
+        if (clave1 == clave2) {
+          document.write("Ingresó las dos claves iguales");
+        } else document.write("Ingresó las dos claves desiguales");
+      </script>
+    </p>
+  </body>
+</html>

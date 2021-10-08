@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 5</title>
+  </head>
+  <body>
+    <p>
+      <script>
+        let lado;
+        lado = parseInt(prompt("Ingrese medida del lado:"));
+        let perimetro;
+        perimetro = lado * 4;
+        document.write("Su perímetro es:");
+        document.write(perimetro);
+        document.write(`<br>Y su area es: ${Math.pow(lado, 2)}`);
+      </script>
+    </p>
+    <p>
+      <script>
+        let num1;
+        let num2;
+        let num3;
+        let num4;
+        num1 = parseInt(prompt("Ingrese primer valor:"));
+        num2 = parseInt(prompt("Ingrese segundo valor:"));
+        num3 = parseInt(prompt("Ingrese tercer valor:"));
+        num4 = parseInt(prompt("Ingrese cuarto valor:"));
+        let suma;
+        suma = num1 + num2;
+        let producto;
+        producto = num3 * num4;
+        let productoTotal;
+        productoTotal = num1 * num2 * num3 * num4;
+        document.write("La suma de los dos primeros valores es:");
+        document.write(suma);
+        document.write("<br>");
+        document.write("El producto del tercer y cuarto valor es:");
+        document.write(producto);
+        document.write(
+          `<br>El producto de los cuatro números es: ${productoTotal}`
+        );
+      </script>
+    </p>
+
+    <p>
+      <script>
+        let num5;
+        let num6;
+        let num7;
+        let num8;
+        num5 = prompt("Ingrese primer valor:");
+        num6 = prompt("Ingrese segundo valor:");
+        num7 = prompt("Ingrese tercer valor:");
+        num8 = prompt("Ingrese cuarto valor:");
+        let sum;
+        sum = parseInt(num5) + parseInt(num6) + parseInt(num7) + parseInt(num8);
+        let product;
+        product =
+          parseInt(num5) * parseInt(num6) * parseInt(num7) * parseInt(num8);
+        document.write("La suma de los cuatro valores es:");
+        document.write(sum);
+        document.write("<br>");
+        document.write("El producto de los cuatro valor es:");
+        document.write(product);
+      </script>
+    </p>
+
+    <p>
+      <script>
+        let precio;
+        let cantidad;
+        precio = prompt("Ingrese precio del artículo");
+        cantidad = prompt("Ingrese la cantidad de artículos a llevar:");
+        let importe;
+        importe = parseFloat(precio) * parseFloat(cantidad);
+        document.write("Debe abonar: ");
+        document.write(importe);
+      </script>
+    </p>
+  </body>
+</html>

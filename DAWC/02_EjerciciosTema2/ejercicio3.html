@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercico 3</title>
+  </head>
+  <body>
+    <input type="button" value="testear" onclick="test1()" />
+    <input type="button" value="testear" onclick="testeo2()" />
+
+    <script>
+      function comprobarEsPar(numero) {
+        if (numero % 2 == 0) return true;
+        else return false;
+      }
+
+      function test1() {
+        for (let i = 0; i <= 11; i++) {
+          console.log(comprobarEsPar(i) ? `${i} es par` : `${i} es impar`);
+        }
+      }
+
+      function testeo2() {
+        var valoresEntrada = [1, 2, 5, 8, 9, 12, 16];
+        var valoresEsperados = [false, true, false, true, false, true, true];
+
+        for (let i = 0; i < valoresEntrada.length; i++) {
+          let valor = comprobarEsPar(valoresEntrada[i]);
+          if (valor) {
+            console.log(
+              `${valoresEntrada[i]} es par y se esperaba ${valoresEsperados[i]}`
+            );
+          } else
+            console.log(
+              `${valoresEntrada[i]} es impar y se esperaba ${valoresEsperados[i]}`
+            );
+        }
+      }
+    </script>
+  </body>
+</html>

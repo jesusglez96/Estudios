@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 4</title>
+  </head>
+  <body>
+    <input type="button" value="testear" onclick="test()" />
+
+    <script>
+      function europea2talla(europea) {
+        let talla = europea.toLowerCase();
+
+        switch (talla) {
+          case "xs":
+          case "s":
+            return "pequeña";
+            break;
+          case "m":
+            return "mediana";
+            break;
+          case "l":
+          case "xl":
+          case "xxl":
+            return "grande";
+            break;
+
+          default:
+            "no valido";
+            break;
+        }
+      }
+
+      function test() {
+        var tallasEuropeas = [
+          "XS",
+          "xs",
+          "S",
+          "s",
+          "M",
+          "m",
+          "L",
+          "l",
+          "XL",
+          "xl",
+          "XXL",
+          "xxl",
+        ];
+        var valoresEsperados = [
+          "Pequeña",
+          "Pequeña",
+          "Pequeña",
+          "Pequeña",
+          "Mediana",
+          "Mediana",
+          "Grande",
+          "Grande",
+          "Grande",
+          "Grande",
+          "Grande",
+          "Grande",
+        ];
+
+        for (let i = 0; i < tallasEuropeas.length; i++) {
+          let valor = europea2talla(tallasEuropeas[i]);
+          console.log(
+            `${tallasEuropeas[i]} es ${valor} y se esperaba ${valoresEsperados[i]}`
+          );
+        }
+      }
+    </script>
+  </body>
+</html>
