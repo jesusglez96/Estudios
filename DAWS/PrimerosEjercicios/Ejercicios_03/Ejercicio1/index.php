@@ -36,14 +36,10 @@
         for ($i = 0; $i < 10; $i++) {
             echo "<tr>";
             for ($j = 0; $j < 10; $j++) {
-
+                $cadena = implode(" ", $ojos);
                 if ($ojos[$pos] == 0) {
-
-                    $cadena = implode(" ", $ojos);
                     echo "<td><a href='index.php?act=$pos&ojos=$cadena'><img src='Ojo/perro.png'></a></td>";
                 } else {
-
-                    $cadena = implode(" ", $ojos);
                     echo "<td><a href='index.php?act=$pos&ojos=$cadena'><img src='Ojo/perro2.png'></a></td>";
                 }
 
