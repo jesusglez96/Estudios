@@ -54,7 +54,7 @@
         }
 
         if (isset($_REQUEST["nombre"])) {
-            $personas[] = [$_REQUEST["nombre"], $_REQUEST["sexo"], $_REQUEST["gusto"]];
+            $personas[] = ["nombre" => $_REQUEST["nombre"], "sexo" => $_REQUEST["sexo"], "gusto" => $_REQUEST["gusto"]];
         }
 
         $arPersonas = base64_encode(serialize($personas));
