@@ -8,15 +8,12 @@
 </head>
 <body>
     <script>
-        let arr = [5, 2, 3, -2, 7, ,9];
-        let sum = 0;
-        arr.forEach(suma);
-
-        console.log(sum);
-
-        function suma(num) {
-            sum += num;
-        }
+        let frutas = ['Plátanos', 'Naranjas', 'Pomelos', 'Fresas'];
+        console.log(frutas);
+        frutas.splice(2, 1);
+        console.log(frutas);
+        frutas.splice(1, 0, "Limones");
+        console.log(frutas);
     </script>
 </body>
 </html>
