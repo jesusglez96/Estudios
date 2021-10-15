@@ -7,36 +7,32 @@ export default class Persona {
     }
 
     //getters
-    get getNombre() {
+    get nombre() {
         return this._nombre;
     }
-    get getEdad() {
+    get edad() {
         return this._edad;
     }
-    get getFumador() {
+    get fumador() {
         return (this._fumador) ? "si" : "no";
     }
 
     //setters
-    set setNombre(nombre) {
+    set nombre(nombre) {
         this._nombre = nombre;
     }
 
-    set setEdad(edad) {
-        try {
-            if (0 < edad) this._edad = edad;
-            else throw new error;
-        } catch (error) {
-            alert("Edad introducida erronea");
-        };
+    set edad(edad) {
+        if (0 < edad) this._edad = edad;
+        else throw new Error;
     }
-    set setFumador(fumador) {
+    set fumador(fumador) {
         this._fumador = fumador;
     }
 
     //Métodos de objetos
     toString() {
-        return `Nombre: ${this._nombre}, Edad: ${this._edad}, Fumador: ${this.getFumador}`;
+        return `Nombre: ${this._nombre}, Edad: ${this._edad}, Fumador: ${this.fumador}`;
     }
 
     cumplirEdad() {
@@ -47,7 +43,7 @@ export default class Persona {
         let arr = [];
         if (personas.length != 0) {
             personas.forEach(persona => {
-                if (persona.getEdad > this.edad) {
+                if (persona.edad > this.edad) {
                     arr.push(persona);
                 }
 
@@ -62,6 +58,6 @@ export default class Persona {
     }
 
     static comparaPersonas(persona1, persona2) {
-        return (persona1.getEdad < persona2.getEdad) ? persona2 : persona1;
+        return (persona1.edad < persona2.edad) ? persona2 : persona1;
     }
 }

@@ -1,36 +1,27 @@
 import Persona from "./personas.js";
 export default class Conductor extends Persona {
     //Constructor
-    constructor(nombre, edad, fumador = false, puntos = 15, ...carnets) {
-        super(nombre, edad, fumador);
+    constructor(nombre, edad, puntos = 15, carnets) {
+        super(nombre, edad);
         this._puntos = puntos;
-        this._carnets;
-        if (carnets.length != 0) {
-            carnets.forEach(carnet => {
-                this._carnets += `${carnet}, `;
-            });
-        }
+        this._carnets = carnets;
     }
 
     //getter
-    get getPuntos() {
+    get puntos() {
         return this._puntos;
     }
-    get getCarnets() {
+    get carnets() {
         return this._carnets;
     }
 
     //setter
-    set setCarnets(carnet) {
-        this._carnets += `${carnet}, `;
+    set carnets(carnets) {
+        this._carnets = carnets;
     }
 
     sancionPuntos(puntos) {
-        try {
-            if (this._puntos - puntos >= 0) this._puntos -= puntos;
-            else throw new error;
-        } catch (error) {
-            alert("No puede quitar tantos puntos.");
-        }
+        if (this._puntos - puntos >= 0) this._puntos -= puntos;
+        else throw new Error;
     }
 }
