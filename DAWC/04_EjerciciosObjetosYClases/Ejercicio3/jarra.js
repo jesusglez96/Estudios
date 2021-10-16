@@ -1,4 +1,4 @@
-class Jarra {
+export default class Jarra {
     //Constructor
     constructor(capacidad, cantidad) {
         this._capacidad = capacidad;
@@ -19,13 +19,20 @@ class Jarra {
             this._cantidad += jarra2._cantidad;
             jarra2.vaciar();
         } else {
-            this.llenar();
             jarra2._cantidad -= this._capacidad - this._cantidad;
+            this.llenar();
         }
+    }
+
+    toString() {
+        let cad = `Capacidad: ${this._capacidad}, Cantidad: ${this._cantidad}`;
+        return cad;
     }
 
     //Método static
     static comparar(jarra1, jarra2) {
-        return
+        const orden = (x, y) => (x._cantidad > y._cantidad) ? x : y;
+        return orden(jarra1, jarra2);
     }
+
 }
