@@ -1,0 +1,67 @@
+/* Ejercicio1 */
+.shady {
+  /* Ejercicio 3 ultima parte*/
+  background-image: linear-gradient(to right, #3f87a6, #ebf8e1, #f69d3c);
+
+  width: 30em;
+  height: 10em;
+  margin: 1em;
+  box-shadow: 2px 2px 2px 2px greenyellow;
+}
+
+.shady2 {
+  /* Ejercicio 3 ultima parte*/
+  background-image: radial-gradient(
+    ellipse at right,
+    #ebf8e1,
+    #dad7fa 20%,
+    #fadad4 50%
+  );
+
+  width: 30em;
+  height: 10em;
+  margin: 1em;
+  box-shadow: -2px -2px red;
+}
+
+.shady3 {
+  /* Ejercicio 3 ultima parte*/
+  background-image: repeating-radial-gradient(
+    circle at 100%,
+    rgb(0, 0, 0),
+    rgb(255, 253, 253) 20px,
+    rgb(110, 110, 110) 10px
+  );
+
+  width: 30em;
+  height: 10em;
+  margin: 1em;
+  box-shadow: 2px 0px blue;
+}
+
+/* Ejercicio 2: card */
+.card {
+  width: 15em;
+  box-shadow: 0 4px 8px 0 dimgray, 0 6px 20px 0 grey;
+  text-align: center;
+}
+
+.header {
+  padding: 2em;
+  background-color: burlywood;
+}
+
+.container {
+  padding: 1em;
+  background-color: white;
+}
+
+/* Ejercicio 3 */
+body {
+  /* background-image: linear-gradient(to top, rgb(255, 125, 125), rgb(131, 164, 255)); */
+  background-image: linear-gradient(
+    to top,
+    rgb(255, 125, 125, 0.5),
+    rgb(131, 164, 255, 0.5)
+  );
+}
