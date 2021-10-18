@@ -1,0 +1,21 @@
+div {
+  text-align: center;
+  width: 18em;
+  border: 1px solid black;
+  margin: auto;
+}
+img {
+  padding: 1em;
+  border-radius: 15em;
+}
+a {
+  display: inline-block;
+  width: 6em;
+  padding: 1em;
+  margin: auto;
+  margin-bottom: 1em;
+  background-color: rgb(255, 61, 152);
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+}

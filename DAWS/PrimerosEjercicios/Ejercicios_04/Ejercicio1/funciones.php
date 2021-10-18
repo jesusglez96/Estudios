@@ -1,14 +1,12 @@
 <?php 
-function combinacion($arr)
-{
+function combinacion($arr){
     for ($i=0; $i < 6; $i++) { 
         if(empty($arr[$i])) $arr[$i] = rand(1, 49);
     }
     return $arr;
 }
 
-function imprimeApuesta($nums, $serie, $txt)
-{
+function imprimeApuesta($nums, $serie, $txt){
 ?>
    <!DOCTYPE html>
    <html lang="en">

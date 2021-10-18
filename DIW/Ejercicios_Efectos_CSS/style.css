@@ -61,7 +61,82 @@ body {
   /* background-image: linear-gradient(to top, rgb(255, 125, 125), rgb(131, 164, 255)); */
   background-image: linear-gradient(
     to top,
-    rgb(255, 125, 125, 0.5),
-    rgb(131, 164, 255, 0.5)
+    rgb(255, 125, 125, 0.1),
+    rgb(131, 164, 255, 0.9)
   );
+}
+
+/* Ejercicio 4 */
+a.boton1 {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  width: 8em;
+  margin: 2em;
+  display: block;
+  padding: 0.5em;
+  background-color: darkred;
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px 1px black;
+  text-shadow: 6px 6px 20px black;
+}
+
+a.boton2 {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  width: 5em;
+  margin: 2em;
+  display: block;
+  padding: 1em;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 166, 0),
+    rgb(255, 227, 174)
+  );
+}
+
+a.boton2:hover {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  width: 5em;
+  margin: 2em;
+  display: block;
+  padding: 1em;
+  border-radius: 8px;
+  background-image: none;
+  background-color: orange;
+  box-shadow: 8px 8px 60px 15px rgb(255, 166, 0);
+}
+
+img {
+  height: auto;
+  width: 10em;
+}
+
+img.trans {
+  transform: translate(2em);
+}
+img.rota {
+  transform: rotate(0.45turn);
+}
+img.scalx {
+  transform: scaleX(2);
+}
+img.scaly {
+  transform: scaleY(0.2);
+}
+img.scal {
+  transform: scale(0.5);
+}
+img.skewx {
+  transform: skewx(0.2turn);
+}
+img.skewy {
+  transform: skewy(0.2turn);
+}
+img.skew {
+  transform: skew(0.2turn);
 }
