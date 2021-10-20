@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+h1 {
+  position: relative;
+}
+
+.sticky-menu {
+  position: sticky;
+  top: 0;
+  background-color: rgb(8, 45, 99);
+}
+
+.menu-element {
+  color: white;
+  display: inline;
+  margin: 10px;
+}
+
+.banner {
+  background-color: rgb(161, 219, 219);
+}
+
+.logo {
+  background-color: darkolivegreen;
+}
+
+.backlogo {
+  background-color: darkgoldenrod;
+}
+
+.content {
+  background-color: pink;
+}
+
+.centered {
+  background-color: rgb(105, 255, 100);
+}
+
+.footer {
+  background-color: rgb(8, 45, 99);
+  bottom: 0;
+  color: white;
+  position: fixed;
+}

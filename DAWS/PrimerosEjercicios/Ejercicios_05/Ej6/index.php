@@ -8,11 +8,14 @@
 </head>
 <body>
     <?php 
-    $frs = (isset($_REQUEST["txt"])) ? $_REQUEST["txt"] : "Aquí irá tu frase, esto es un ejemplo";    
-    echo "<h2>$frs</h2>";
+    $txt = (isset($_REQUEST["txt"])) ? $_REQUEST["txt"] : "Frase de prueba.";
+    $txt = trim($txt, ".");
+    $arTxt = explode(".", $txt);
     
-    echo "Esta frase tiene " . str_word_count($frs) . " palabras.";
-
+    echo $txt;
+    foreach ($arTxt as $key => $value) {
+        echo "<br>" . $value . "<br>Tiene " . str_word_count($value) . " palabras";
+    }
     ?>
     <form action="index.php" method="post">
         <label for="txt">Texto: 

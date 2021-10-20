@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        border: 2px dashed black;
+        height: 500px;
+        width: 600px;
+        /* padding: 10px; */
+        margin: 15px;
+        position: relative;
+      }
+
+      .box {
+        border: 2px solid black;
+        color: white;
+        height: 100px;
+        width: 100px;
+        font-family: sans-serif;
+        font-size: 3rem;
+        line-height: 100px;
+        text-align: center;
+        /* margin-top: 10px; */
+      }
+
+      .primero {
+        background-color: blueviolet;
+        position: static;
+
+        /* Se coloca segun el flujo HTML que le corresponda
+            top 
+            bottom
+            left
+            right
+            Ignora todos estos valores
+            */
+      }
+
+      .segundo {
+        background-color: chocolate;
+        position: relative;
+        left: 75px;
+        /* 
+            Se coloca segun el flujo y despues,
+            Atiende a top, bottom, left, right
+            Es de donde le empuja
+            */
+      }
+
+      .tercero {
+        background-color: darkcyan;
+        position: absolute;
+        right: 0;
+        top: 0;
+        /* 
+        Pierde su hueco del flujo.
+        Se posiciona segun la ventana.
+        Si al padre se le asigna relative,
+        se posiciona segun el padre
+        */
+      }
+
+      .cuarto {
+        background-color: darkkhaki;
+        position: fixed;
+        bottom: 0;
+        left: 0px;
+        z-index: -500;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box primero">1</div>
+      <div class="box segundo">2</div>
+      <div class="box tercero">3</div>
+      <div class="box cuarto">4</div>
+    </div>
+  </body>
+</html>
