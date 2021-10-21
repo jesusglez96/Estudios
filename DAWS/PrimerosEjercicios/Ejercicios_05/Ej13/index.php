@@ -25,7 +25,6 @@ un signo de puntuación. -->
 
     if (str_ends_with($txt, ".")) $txt = rtrim($txt, ".");
     $arTxt = preg_split("/[\s,.]+/", $txt);
-    var_dump($arTxt);
 
     $arCount = ["wordLong" => ["pos" => 0, "len" => 0], "words" => 0];
 
