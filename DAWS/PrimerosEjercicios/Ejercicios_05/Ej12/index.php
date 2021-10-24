@@ -10,17 +10,16 @@
     <?php 
     $txt = (isset($_REQUEST["txt"])) ? $_REQUEST["txt"] : "Frase de prueba.";
     $count = ["blanco" => 0, "vocalA" => 0, "vocalE" => 0, "vocalI" => 0, "vocalO" => 0, "vocalU" => 0, "palabras10" => 0];
-    $arTxt = preg_split("/ /", $txt);
+    $arTxt = preg_split("/[\s,.;:-]+/", $txt);
 
     $count["blanco"] = substr_count($txt, " ");
-    $count["vocalA"] += substr_count($txt, "a");  
-    $count["vocalE"] += substr_count($txt, "e");  
-    $count["vocalI"] += substr_count($txt, "i");  
-    $count["vocalO"] += substr_count($txt, "o");  
-    $count["vocalU"] += substr_count($txt, "u");  
+    $count["vocalA"] = substr_count($txt, "a");  
+    $count["vocalE"] = substr_count($txt, "e");  
+    $count["vocalI"] = substr_count($txt, "i");  
+    $count["vocalO"] = substr_count($txt, "o");  
+    $count["vocalU"] = substr_count($txt, "u");  
     
     foreach ($arTxt as $key => $word) {
-
        if (mb_strlen($word) > 10) $count["palabras10"]++;
     }
     

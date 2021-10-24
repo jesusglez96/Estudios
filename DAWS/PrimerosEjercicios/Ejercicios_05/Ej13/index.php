@@ -24,7 +24,7 @@ un signo de puntuación. -->
     echo "<h1>$txt</h1>";
 
     if (str_ends_with($txt, ".")) $txt = rtrim($txt, ".");
-    $arTxt = preg_split("/[\s,.]+/", $txt);
+    $arTxt = preg_split("/[\s,.;:]+/", $txt);
 
     $arCount = ["wordLong" => ["pos" => 0, "len" => 0], "words" => 0];
 
@@ -34,7 +34,7 @@ un signo de puntuación. -->
         }
         if (mb_strlen($arTxt[$i]) > $arCount["wordLong"]["len"]) {
             $arCount["wordLong"]["len"] = mb_strlen($arTxt[$i]);
-            $arCount["wordLong"]["pos"] = $i + 1; //mb_stripos($txt, $arTxt[$i]);
+            $arCount["wordLong"]["pos"] = $i + 1;
         }
     }
 

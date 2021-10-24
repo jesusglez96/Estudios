@@ -12,7 +12,7 @@
     echo "<h2>$txt</h2>";
 
     for ($i=0; $i < strlen($txt); $i++) { 
-       $txt = str_pad($txt[strlen($txt)-1], strlen($txt), trim($txt, $txt[strlen($txt)-1]));
+    $txt = str_pad($txt[strlen($txt)-1], strlen($txt), substr($txt, 0, -1));
 
         echo $txt . "<br>";
     }

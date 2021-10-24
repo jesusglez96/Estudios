@@ -15,7 +15,7 @@
     <?php 
     if (isset($_REQUEST["name"])) {
         echo "<p>" . $_REQUEST["name"] . "</p>";
-        $txt = explode(" ", $_REQUEST["name"]);
+        $txt = preg_split("/[\s,.]+/", $_REQUEST["name"]);
 
         $acro = "";
         foreach ($txt as $key => $value) {
