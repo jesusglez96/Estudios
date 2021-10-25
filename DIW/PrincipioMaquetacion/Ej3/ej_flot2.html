@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML5, CSS3 y JS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      div.container {
+        width: auto;
+        height: 100%;
+      }
+      header {
+        text-align: center;
+        padding: 10px;
+      }
+      nav {
+        background-color: rgb(63, 63, 161);
+      }
+      .menu-item {
+        color: white;
+        padding: 6px;
+        margin-right: 60px;
+      }
+      nav div.menu-item {
+        display: inline-table;
+      }
+      div.sidebar {
+        background-color: rgb(63, 63, 161);
+        float: left;
+        width: fit-content;
+        height: 600px;
+        margin: 20px 40px 0 0;
+      }
+      div.sidebar div.menu-item {
+        margin-bottom: 5px;
+      }
+      section.courses {
+        margin: 20px 2px 20px 0;
+        float: left;
+        text-align: center;
+      }
+      div.course {
+        border: 1px solid black;
+        border-radius: 20px;
+        display: table-cell;
+        padding: 20px;
+        overflow: auto;
+        width: 420px;
+      }
+      .articles {
+        float: left;
+      }
+      article {
+        display: table-caption;
+        float: left;
+        width: 420px;
+      }
+      footer {
+        text-align: center;
+        background-color: grey;
+        float: left;
+        padding: 20px;
+        height: fit-content;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>DESARROLLO WEB FRONT-END</h1>
+      </header>
+      <nav>
+        <div class="menu-item">Inicio</div>
+        <div class="menu-item">HTML5</div>
+        <div class="menu-item">CSS3</div>
+        <div class="menu-item">JavaScript</div>
+      </nav>
+      <div class="sidebar">
+        <div class="menu-item">Inicio</div>
+        <div class="menu-item">HTML5</div>
+        <div class="menu-item">CSS3</div>
+        <div class="menu-item">JavaScript</div>
+      </div>
+      <section class="courses">
+        <div class="course">
+          <p><img src="img/logoHTML5.png" /></p>
+          <p>
+            HTML -Lenguaje de Marcado para Hipertextos (HyperText Markup
+            Language)- es el elemento de construcción más básico de una página
+            web y se usa para crear y representar visualmente una página web.
+            Determina el contenido de la página web, pero no su funcionalidad.
+            Otras tecnologías distintas son usadas para describir la
+            apariencia/presentación de una página web (CSS) o su funcionalidad
+            (JavaScript).
+          </p>
+        </div>
+        <div class="course">
+          <p><img src="img/logocss3.png" /></p>
+          <p>
+            CSS3 es la última evolución del lenguaje de las Hojas de Estilo en
+            Cascada (Cascading Style Sheets), y pretende ampliar la versión
+            CSS2.1. Trae consigo muchas novedades altamente esperadas, como las
+            esquinas redondeadas, sombras, gradientes, transiciones o
+            animaciones, y nuevos layouts como multi-columnas, cajas flexibles o
+            maquetas de diseño en cuadrícula (grid layouts). . No es una
+            especificación cerrada.
+          </p>
+        </div>
+        <div class="course">
+          <p><img src="img/logojs.png" /></p>
+          <p>
+            JavaScript (JS) es un lenguaje ligero e interpretado, orientado a
+            objetos con funciones de primera clase, más conocido como el
+            lenguaje de script para páginas web, pero también usado en muchos
+            entornos sin navegador, tales como node.js, Apache CouchDB y Adobe
+            Acrobat. Es un lenguaje script multi-paradigma, basado en
+            prototipos, dinámico, soporta estilos de programación funcional,
+            orientada a objetos e imperativa.
+          </p>
+        </div>
+      </section>
+      <section class="articles">
+        <article>
+          HTML5 HTML5 HTML5 HTML5 HTML5 HTML5 HTML5 HTML5 HTML5 HTML5 HTML5
+          HTML5 HTML5 HTML5 HTML5 HTML5 HTML5 HTML5 HTML5 HTML5 HTML5 HTML5
+          HTML5 HTML5
+        </article>
+        <article>
+          CSS3 CSS3 CSS3 CSS3 CSS3 CSS3 CSS3 CSS3 CSS3 CSS3 CSS3 CSS3 CSS3 CSS3
+          CSS3 CSS3 CSS3 CSS3 CSS3 CSS3 CSS3 CSS3 CSS3 CSS3 CSS3 CSS3 CSS3 CSS3
+          CSS3 CSS3 CSS3 CSS3 CSS3 CSS3 CSS3 CSS3
+        </article>
+        <article>
+          JavaScript JavaScript JavaScript JavaScript JavaScript JavaScript
+          JavaScript JavaScript JavaScript JavaScript JavaScript JavaScript
+          JavaScript JavaScript JavaScript JavaScript JavaScript JavaScript
+          JavaScript JavaScript
+        </article>
+      </section>
+      <footer>Web desarrollada por ...</footer>
+    </div>
+  </body>
+</html>
