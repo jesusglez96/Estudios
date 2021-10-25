@@ -8,23 +8,19 @@
 </head>
 <body>
      <?php 
-
-     
-     //TODO hacer este que no esta hecho
-
-
-
-    // date_default_timezone_set("Europe/Madrid");
-        // setlocale(LC_TIME, 'es_ES.UTF-8'); 
         if (isset($_REQUEST["a"])) {
+            $fechaN = $_REQUEST["n"];
             $d = $_REQUEST["d"];
             $m = $_REQUEST["m"];
             $a = $_REQUEST["a"];
-            $nxt = strftime("%d de %B de %Y", strtotime("+$d day $m month $a year"));
+            $nxt = strftime("%d de %B de %Y", strtotime($fechaN . "+$d day $m month $a year"));
             echo "<h4>El siguiente día es: " . $nxt . "</h4>";
         }
     ?>
      <form action="index.php" method="post">
+        <label for="n">
+            Fecha de nacimiento: <input type="date" name="n" id="n">
+        </label>
         <label for="d">
             Diass: <input type="number" name="d" id="d">
         </label>
