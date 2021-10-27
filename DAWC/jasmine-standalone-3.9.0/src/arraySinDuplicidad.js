@@ -7,5 +7,4 @@ function arraySinDuplicidad(arr) {
   });
   arrNoDuplicado.sort((num1, num2) => num1 - num2);
   return arrNoDuplicado;
-  Array.prototype.so;
 }
