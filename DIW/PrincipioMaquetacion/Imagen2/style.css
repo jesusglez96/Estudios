@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 15000px;
+}
+div {
+  background: url("mono.jpg");
+  background-attachment: fixed;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: calc(100vw - 1rem);
+}
+h1 {
+  text-align: center;
+  padding-top: 150px;
+}
