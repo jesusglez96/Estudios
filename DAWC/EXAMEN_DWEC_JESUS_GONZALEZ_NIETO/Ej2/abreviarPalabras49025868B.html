@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function abreviarPalabras(arr) {
+        let arrAbreviado = [];
+        arr.forEach((word) => {
+          if (word.length > 4) arrAbreviado.push(word.slice(0, 4) + "...");
+          else arrAbreviado.push(word);
+        });
+
+        return arrAbreviado;
+      }
+
+      let arrEntrada = [
+        "sal",
+        "tele",
+        "apodo",
+        "arboleda",
+        "ola",
+        "pozo",
+        "adobe",
+        "océano",
+      ];
+
+      console.log(abreviarPalabras(arrEntrada));
+    </script>
+  </body>
+</html>

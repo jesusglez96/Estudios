@@ -120,7 +120,7 @@ img.trans {
   transform: translate(2em);
 }
 img.rota {
-  transform: rotate(0.45turn);
+  transform: rotate(45deg);
 }
 img.scalx {
   transform: scaleX(2);

@@ -2,20 +2,64 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   height: 15000px;
 }
-div {
+div.hero {
   background: url("mono.jpg");
   background-attachment: fixed;
   /* background-repeat: no-repeat; */
   background-size: cover;
   background-position: center;
   height: 100vh;
-  width: calc(100vw - 1rem);
+  width: calc(100vw - 1.001rem);
+  position: relative;
 }
 h1 {
   text-align: center;
   padding-top: 150px;
+}
+div.ola {
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+div.diw {
+  background: url("sol.jpg");
+  background-attachment: fixed;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: calc(100vw - 1.001rem);
+  position: relative;
+}
+
+div.contact {
+  background: url("perro.png");
+  background-attachment: fixed;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: calc(100vw - 1.001rem);
+  position: relative;
+}
+
+nav.nav {
+  position: fixed;
+  z-index: 20;
+  background-color: rgb(90, 87, 253);
+  width: calc(100vw - 1em);
+  text-align: right;
+}
+a {
+  padding: 1em;
+  line-height: 10px;
+  display: inline-block;
 }

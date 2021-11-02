@@ -7,7 +7,18 @@
   "settings": {
     "files.associations": {
       "*.module": "php"
-    }
+    },
+    "livePreview.defaultPreviewPath": "/DAWC/05_EjerciciosDeRepaso/buscarPosiciones.html"
+  },
+  "launch": {
+    "configurations": [
+      {
+        "type": "pwa-chrome",
+        "name": "http://127.0.0.1:3000/DAWC/05_EjerciciosDeRepaso/buscarPosiciones.html",
+        "request": "launch",
+        "url": "http://127.0.0.1:3000/DAWC/05_EjerciciosDeRepaso/buscarPosiciones.html"
+      }
+    ]
   }
 
 }

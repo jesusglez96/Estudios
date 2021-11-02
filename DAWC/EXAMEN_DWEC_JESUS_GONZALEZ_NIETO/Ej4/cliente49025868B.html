@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Cliente {
+        constructor(nombre, fechaNacimiento, saldo) {
+          this._nombre = nombre;
+          this._fechaNacimiento = fechaNacimiento;
+          this._saldo = saldo;
+        }
+
+        nombrePila() {
+          let nombre = this._nombre.substr(
+            this._nombre.indexOf(",") + 1,
+            this._nombre.lenght
+          );
+          return nombre.trim();
+        }
+
+        edad() {
+          let fechaActual = new Date();
+          return (
+            fechaActual.getFullYear() - this._fechaNacimiento.getFullYear()
+          );
+        }
+
+        ingresar(num) {
+          if (num > 0) this._saldo += num;
+        }
+
+        retirar(num) {
+          let aux = 0;
+
+          if (num > 0) {
+            if (this._saldo - num >= 0) {
+              this._saldo -= num;
+              return num;
+            } else {
+              aux = num - this._saldo;
+              this._saldo = 0;
+              return aux;
+            }
+          } else throw new Error("Importe debe ser una cantidad positiva.");
+        }
+
+        hacerBizum(cliente2, cantidad) {
+          if (cantidad > 0) {
+            if (cantidad < this._saldo) {
+              cliente2.ingresar(cantidad);
+              this.retirar(cantidad);
+            } else
+              throw new Error(
+                "No se puede hacer un bizum de una cantidad mayor al saldo."
+              );
+          } else throw new Error("Importe debe ser una cantidad positiva.");
+        }
+
+        comparar(cliente2) {
+          if (this._saldo > cliente2._saldo) return this;
+          else return cliente2;
+        }
+      }
+
+      let per1 = new Cliente(
+        "gonzalez nieto, jesus",
+        new Date(1996, 10, 20),
+        330
+      );
+      let per2 = new Cliente(
+        "almodobar guijuelo, rosario",
+        new Date(1977, 1, 9),
+        150
+      );
+      console.log(per1);
+      console.log(per2);
+
+      console.log(per1.nombrePila());
+      console.log(per2.nombrePila());
+
+      console.log(per1.edad());
+      console.log(per2.edad());
+
+      console.log(per1.retirar(500));
+      per1.ingresar(500);
+      console.log(per1._saldo);
+
+      console.log(per1.comparar(per2));
+      per2.ingresar(800);
+      console.log(per1.comparar(per2));
+
+      per2.hacerBizum(per1, 200);
+      console.log(per1._saldo);
+      console.log(per2._saldo);
+    </script>
+  </body>
+</html>
