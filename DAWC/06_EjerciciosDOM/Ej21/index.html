@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="enlaces1"></div>
+    <button onclick="crearEnlaces1()">crear 1</button>
+    <script>
+      function crearEnlaces1() {
+        let ob1 = document.getElementById("enlaces1");
+        ob1.innerHTML = `<a href="${
+          document.getElementById("text1").value
+        }">Enlace 1</a>
+                     <br><a href="${
+                       document.getElementById("text2").value
+                     }">Enlace 2</a>`;
+      }
+    </script>
+    <hr />
+    <button id="text1" value="www.google.es">google</button>
+    <button id="text2" value="www.amazon.es">amazon</button>
+    <div id="enlaces2"></div>
+    <button onclick="crearEnlaces2()">crear 1</button>
+
+    <script>
+      function crearEnlaces2() {
+        let elemento = document.createElement("a");
+        let puntero = document.getElementById("enlaces2");
+        puntero.appendChild(elemento);
+        let nodotexto = document.createTextNode("Enlace 1");
+        elemento.appendChild(nodotexto);
+        elemento.setAttribute("href", document.getElementById("text1").value); //Porque pilla toda la ruta?
+        puntero.appendChild(document.createElement("br"));
+        elemento = document.createElement("a");
+        puntero.appendChild(elemento);
+        nodotexto = document.createTextNode("Enlace 2");
+        elemento.appendChild(nodotexto);
+        elemento.setAttribute("href", document.getElementById("text2").value); //Porque pilla toda la ruta?
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="recuadro">Quién descubrió América y en que año fue?</p>
+    <button onclick="estiloTexto()">estilo texto</button>
+    <script>
+      function estiloTexto() {
+        // Color fondo
+        document.getElementById("recuadro").style.backgroundColor = "#ffff00"; // amarillo
+        // Color fuente
+        document.getElementById("recuadro").style.color = "#ff0000"; // rojo
+        // Tamaño fuente
+        document.getElementById("recuadro").style.fontSize = "12px";
+        // Tipo fuente
+        document.getElementById("recuadro").style.fontFamily = "Courier";
+        // Estilo fuente (“normal”,”Italic”,”Oblique”)
+        document.getElementById("recuadro").style.fontStyle = "Italic";
+        // Peso fuente (“normal”, “bold”)
+        document.getElementById("recuadro").style.fontWeight = "bold";
+
+        // Alineación fuente (“left”,”right”,”center”)
+        document.getElementById("recuadro").style.textAlign = "center";
+        // Decoración fuente (“none”,”underline”,”overline”,”line-through”)
+        document.getElementById("recuadro").style.textDecoration = "underline";
+        // Espacio entre letras
+        document.getElementById("recuadro").style.letterSpacing = "9px";
+        // Espacio entre palabras
+        document.getElementById("recuadro").style.wordSpacing = "12px";
+        // Transformación del texto (“none”,”capitalize”,”lowercase”,”uppercase”)
+        document.getElementById("recuadro").style.textTransform = "lowercase";
+        // Ancho borde
+        document.getElementById("recuadro").style.borderWidth = "4px";
+        // Estilo del borde ("none","hidden","dotted","dashed","solid","double","groove","ridge","inset","outset")
+        document.getElementById("recuadro").style.borderStyle = "ridge";
+        // Color del borde
+        document.getElementById("recuadro").style.borderColor = "#00ff00"; // verde
+        // Cambiar padding
+        document.getElementById("recuadro").style.padding = "16px";
+        //Cambiar margin
+        document.getElementById("recuadro").style.margin = "10px";
+      }
+    </script>
+    <hr />
+
+    <ul id="listapaises">
+      <li>Brasil</li>
+      <li>Uruguay</li>
+      <li>Argentina</li>
+    </ul>
+    <button onclick="estiloLista()">estilo lista</button>
+    <script>
+      function estiloLista() {
+        let pun = document.getElementById("listapaises");
+        let punselect = document.getElementById("estilolista");
+        pun.style.listStyleType = punselect.value;
+      }
+    </script>
+  </body>
+</html>

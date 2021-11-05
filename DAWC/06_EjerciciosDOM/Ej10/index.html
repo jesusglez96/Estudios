@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="bloque2">
+      <p>pichulita1</p>
+      <p>pichulita2</p>
+      <p>pichulita3</p>
+      <p>pichulita4</p>
+      <p>pichulita5</p>
+    </div>
+    <button onclick="mostrar()">Mostrar</button>
+    <button onclick="ocultar()">ocultar</button>
+    <script>
+      function mostrar() {
+        let obj = document.getElementById("bloque2");
+        let lista = obj.getElementsByTagName("p");
+        for (let elemento of lista) elemento.style.display = "block";
+        for (let i = 0; i < lista.length; i++) {
+          console.log(lista[i].textContent);
+        }
+      }
+      function ocultar() {
+        let obj = document.getElementById("bloque2");
+        let lista = obj.getElementsByTagName("p");
+        for (let elemento of lista) elemento.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

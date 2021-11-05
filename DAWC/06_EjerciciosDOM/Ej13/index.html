@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="parrafos"></div>
+    <button onclick="crear()">Crear p</button>
+    <script>
+      function crear() {
+        let elemento = document.createElement("p");
+        let texto = document.createTextNode("Hola Mundo");
+        elemento.appendChild(texto);
+        document.getElementById("parrafos").appendChild(elemento);
+      }
+    </script>
+  </body>
+</html>

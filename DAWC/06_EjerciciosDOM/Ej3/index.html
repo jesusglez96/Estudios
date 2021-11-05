@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="titulo" onclick="titulaso()">titulo</h1>
+    <p id="parrafo">He aqui el parrafo</p>
+    <button onclick="nuevoNodo()">Crear nodo</button>
+    <script>
+      function titulaso() {
+        document.getElementById("titulo").style.color = "#ff0000";
+        document.getElementById("titulo").style.fontSize = "60px";
+      }
+      let contador = 0;
+      function nuevoNodo() {
+        contador++;
+        let nt = document.createTextNode(" Nuevo texto " + contador + "-");
+        document.getElementById("parrafo").appendChild(nt);
+      }
+    </script>
+  </body>
+</html>

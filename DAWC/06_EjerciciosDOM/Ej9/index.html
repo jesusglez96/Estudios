@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Patata</p>
+    <p>Pirurela</p>
+    <p>alcauciles</p>
+    <p>motocicleta</p>
+    <p>pistacho gordo</p>
+    <button onclick="colorine()">Colorine en parrafo</button>
+    <button onclick="puntito()">er puntito fina</button>
+    <script>
+      function puntito() {
+        let lista = document.getElementsByTagName("p");
+        for (let f = 0; f < lista.length; f++)
+          // Con childNodes accedemos al contenido de cada párrafo
+          lista[f].childNodes[0].nodeValue =
+            lista[f].childNodes[0].nodeValue + ".";
+      }
+      function colorine() {
+        let lista = document.getElementsByTagName("p");
+        for (let f = 0; f < lista.length; f++) lista[f].style.color = "#f00";
+      }
+    </script>
+  </body>
+</html>

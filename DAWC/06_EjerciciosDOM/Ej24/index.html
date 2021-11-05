@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset id="fs">
+      <legend>Ingrese los nombres de sus hijos</legend>
+      <input
+        type="button"
+        onclick="agregarHijo()"
+        value="Presione  para agregar un hijo."
+      />
+      <br />
+    </fieldset>
+    <!-- <button onclick="inputDinamico()">input dinamico</button> -->
+    <script>
+      function agregarHijo() {
+        let nuevohijo = document.createElement("input");
+        nuevohijo.type = "text";
+        nuevohijo.name = "nombre" + cantidad;
+        nuevohijo.id = "nombre" + cantidad;
+        document.getElementById("fs").appendChild(nuevohijo);
+      }
+    </script>
+  </body>
+</html>
