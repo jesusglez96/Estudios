@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- saved from url=(0085)https://ciclos.iesruizgijon.es/pluginfile.php/16378/mod_page/content/92/ejemplo9.html -->
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AW - CSS ejercicio 9</title>
+    <style>
+      body > main > section > table > tbody > tr > * {
+        border-bottom: 1px solid black;
+      }
+      body > main > section > table > tbody > tr:first-of-type > * {
+        background-color: lawngreen;
+        color: gray;
+      }
+      body > main > section > table > tbody > tr:last-of-type > * {
+        background-color: darkred;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Colores usados: lawngreen, gray, darkred, white.
+Las filas tienen un borde inferior de 1px, solid. -->
+    <header>
+      <h1>CSS: selector samples</h1>
+    </header>
+    <main>
+      <section>
+        <h3>CSS3 child selectors: table</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Position</th>
+              <th>Team</th>
+              <th>Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Manchester City</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Chelsea</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Liverpool</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Arsenal</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Tottenham</td>
+              <td>18</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr colspan="3">
+              <th>5 teams</th>
+            </tr>
+          </tfoot>
+        </table>
+        <table></table>
+      </section>
+    </main>
+  </body>
+</html>

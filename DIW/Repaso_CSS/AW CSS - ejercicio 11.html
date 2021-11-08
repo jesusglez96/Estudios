@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)https://ciclos.iesruizgijon.es/pluginfile.php/16378/mod_page/content/92/ejemplo11.html -->
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AW CSS - ejercicio 11</title>
+    <style>
+      div#divespecial {
+        background-color: grey;
+        border: 1px solid red;
+        width: 200px;
+      }
+      p#pespecial {
+        border: 1px dashed green;
+        width: 300px;
+      }
+      div#otroespecial {
+        border: 1px dotted grey;
+        width: 300px;
+        margin-left: calc(100vw - 350px);
+      }
+      span {
+        background-color: grey;
+        color: white;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>El modelo de caja en CSS</h1>
+    <hr />
+    <h3>Un Div especial</h3>
+    <div id="divespecial">
+      Este es un bloque DIV con algunas propiedades especiales como el color de
+      fondo (background-color), la anchura (width), el borde (border).
+    </div>
+    <hr />
+    <h3>Un párrafo especial</h3>
+    <p id="pespecial">
+      Esto es un párrafo p con algunas propiedades especiales como el color de
+      fondo (background-color), la anchura (width), el borde (border).
+    </p>
+    <hr />
+    <h3>Otro div especial</h3>
+    <div id="otroespecial">
+      Diferencias entre el span y el DIV: no se comportan igual, el DIV por
+      defecto ocupa TODA la línea y provoca que el siguiente contenido salte
+      abajo. El span no.
+    </div>
+    <hr />
+    <h3>Unos spans</h3>
+    <span>Esto es un span</span> <span>Esto es OTRO span</span>
+    <span>Este es el último span</span>
+  </body>
+</html>

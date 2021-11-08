@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- saved from url=(0085)https://ciclos.iesruizgijon.es/pluginfile.php/16378/mod_page/content/92/ejemplo6.html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AW CSS - Ejercicio 6</title>
+    <style>
+      body {
+        background-color: white;
+        color: grey;
+      }
+      h1,
+      h2 {
+        color: red;
+      }
+      a {
+        color: red;
+        font-size: 14px;
+        text-decoration: underline;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a:visited {
+        color: grey;
+      }
+      a:active {
+        color: blue;
+      }
+      a:focus {
+        font-size: 28px;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- El cuerpo del documento será de color blanco con el texto en gris. Los titulares, color rojo.
+Los enlaces tendrán color rojo, tamaño de fuente 14px y subrayado.
+Al pasar el ratón sobre los enlaces, el subrayado desaparecerá.
+Los enlaces visitados tomarán el color gris.
+Los enlaces activos tendrán color azul.
+Los enlaces que reciban el "foco" cambiarán a tamaño 28px, con fondo negro.
+También aplica una clase a la tabla para que tenga un borde punteado (propiedad border-style con valor dashed). -->
+
+    <h1>Estilos CSS: los PSEUDO SELECTORES</h1>
+    <p>
+      A un estilo se le pueden aplicar pseudoselectores con lo que se consiguen
+      efectos dinámicos. El ejemplo típico es el de los enlaces:<br />
+      <br />
+      a:link<br />
+      a:hover<br />
+      a:visited<br />
+      a:active<br />
+    </p>
+
+    <h2>Etiquetas &lt;a&gt; con pseudoselectores</h2>
+    <table>
+      <tbody>
+        <tr>
+          <td><a href="https://www.elpais.es/">El País</a></td>
+          <td><a href="https://www.abc.es/">ABC</a></td>
+        </tr>
+
+        <tr>
+          <td><a href="https://www.eldiario.es/">eldiario.es</a></td>
+          <td><a href="http://www.elmundo.es/">El Mundo</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://www.diariodesevilla.es/">Diario de Sevilla</a>
+          </td>
+          <td><a href="http://www.utreraweb.com/">UTRERAWeb</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

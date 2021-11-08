@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)https://ciclos.iesruizgijon.es/pluginfile.php/16378/mod_page/content/92/ejemplo15.html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        color: red;
+      }
+      h1 {
+        font-size: xx-large;
+        text-decoration: underline 6px;
+        margin: 20px;
+      }
+      table {
+        margin: 20px;
+        border: 3px dashed red;
+      }
+      table tbody tr td > * {
+        border: 1px dashed red;
+      }
+      table tbody tr td > textarea {
+        color: green;
+      }
+      table tbody tr:last-of-type td {
+        /* float: left; */
+        display: inline-block;
+        /* width: fit-content; */
+      }
+      table tbody tr:last-of-type td > input {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Estilos CSS para formularios</h1>
+    <hr />
+    <form
+      name="Formulario"
+      method="post"
+      action="https://ciclos.iesruizgijon.es/pluginfile.php/16378/mod_page/content/92/ejemplo15.html"
+    >
+      <table>
+        <tbody>
+          <tr>
+            <td>Login:</td>
+            <td><input name="login" value="" type="text" /></td>
+          </tr>
+          <tr>
+            <td>Password:</td>
+            <td><input name="password" value="" type="password" /></td>
+          </tr>
+          <tr>
+            <td>Descripcion:</td>
+
+            <td>
+              <textarea name="descripcion">
+				Contenido inicial...
+				</textarea
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Posesiones:</td>
+
+            <td>
+              <input name="posesion" value="Casa" type="checkbox" /> Casa<br />
+              <input name="posesion" value="Ordenador" type="checkbox" />
+              Ordenador<br />
+              <input name="posesion" value="Coche" type="checkbox" />
+              Coche<br />
+              <input name="posesion" value="Moto" type="checkbox" /> Moto<br />
+              <input name="posesion" value="Bicicleta" type="checkbox" />
+              Bicicleta<br />
+            </td>
+          </tr>
+          <tr>
+            <td>SEXO:</td>
+
+            <td>
+              <input name="sexo" value="Male" type="radio" />Hombre<br />
+              <input name="sexo" value="Female" type="radio" />Mujer<br />
+            </td>
+          </tr>
+          <tr>
+            <td><input name="boton_submit" value="Enviar" type="submit" /></td>
+            <td><input name="boton_vaciar" value="Vaciar" type="reset" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

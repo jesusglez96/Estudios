@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 10px;
+        background-color: rgb(192, 192, 192);
+        color: black;
+      }
+      h1#titulo {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 40px;
+        color: rgb(104, 104, 104);
+      }
+      p {
+        width: 20vw;
+      }
+      p.naranja {
+        background-color: blue;
+        color: orange;
+      }
+      p.consola {
+        background-color: black;
+        color: green;
+        font-family: "Courier New", Courier, monospace;
+      }
+      a {
+        display: block;
+      }
+      a.importante {
+        text-decoration: none;
+      }
+      a.importante:hover {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Cuerpo del documento: fuente Verdana 10px, color negro. Color de fondo gris.
+Elementos para 3 clases diferentes:
+.naranja: texto naranja con fondo azul. Aplicable a párrafos.
+.consola: texto verde tipo Courier sobre fondo negro. Aplicable a párrafos.
+.importante: para los enlaces. No deben tener subrayado y cuando el ratón pase por encima les cambia el fondo a amarillo.
+Crea también un elemento id llamado #titulo para aplicarlo a una etiqueta <h1>, con fuente Verdana tamaño 40px y color gris oscuro. -->
+    <h1 id="titulo">El titulaso</h1>
+    <p class="naranja">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi expedita
+      sunt quod eum adipisci facere atque, iure consectetur quisquam voluptatem
+      at numquam aliquid delectus mollitia commodi est laboriosam repellat
+      dolorum.
+    </p>
+    <p class="consola">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem natus
+      excepturi architecto aspernatur quod, eveniet magni, sunt neque tempora at
+      deserunt optio nam incidunt, expedita velit. Nesciunt iste alias fugit!
+    </p>
+    <a class="importante" href="www.google.es">Google</a>
+    <a class="importante" href="www.amazon.es">Amazon</a>
+  </body>
+</html>
