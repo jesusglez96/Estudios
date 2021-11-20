@@ -1,34 +1,45 @@
 <?php
 session_start();
 if (!isset($_SESSION["mascotas"])) {
-    $_SESSION["mascota"] = [];
+    $_SESSION["mascotas"] = [];
 }
 
 function existeFecha()
 {
     $fExiste = "#" . date("d/m/Y", time()) . "#" . PHP_EOL;
-    echo "<pre>";
+    echo "<pre> fExiste ";
     var_dump($fExiste);
     echo "</pre>";
+
     $docu = file("mascotas.txt");
-    return in_array($fExiste, $docu);
-}
+    echo "<pre> docu ";
+    var_dump($docu);
+    echo "</pre>";
 
+    $existe = in_array($fExiste, $docu);
+    echo "<pre> existe la fecha o no ";
+    var_dump($existe);
+    echo "</pre>";
+
+    return $existe;
+}
 if (isset($_POST["guardar"])) {
-    $fop = fopen("mascotas.txt", "a");
-    if (!existeFecha()) {
-        echo "<pre>";
-        var_dump((existeFecha()));
-        echo "</pre>";
-        $f = date("d/m/Y", time());
-        fwrite($fop, "#$f#" . PHP_EOL);
-        $_SESSION["mascotas"][] = "#$f#";
-    }
-
-    fwrite($fop, $_POST["name"] . "-" . $_POST["tipo"] . "-" . $_POST["edad"] . PHP_EOL);
-    $_SESSION["mascotas"][] = $_POST["name"] . "-" . $_POST["tipo"] . "-" . $_POST["edad"];
+    $_SESSION["mascotas"][$_POST["name"]] = ["tipo" => $_POST["tipo"], "edad" => $_POST["edad"]];
 }
+if (isset($_POST["grabar"])) {
+    $fop = fopen("mascotas.txt", "a");
+    $f = date("d/m/Y", time());
+    if (!existeFecha()) {
+        fwrite($fop, "#" . $f . "#" . PHP_EOL);
+    }
+    foreach ($_SESSION["mascotas"] as $key => $value) {
+        fwrite($fop, $key . "-" . $value['tipo'] . "-" . $value["edad"] . PHP_EOL);
+    }
+    $_SESSION["mascotas"] = [];
+}
+
 var_dump($_SESSION["mascotas"]);
+
 if (isset($_POST["eliminar"])) {
     session_destroy();
     header("refresh:0;");
@@ -56,11 +67,22 @@ if (isset($_POST["eliminar"])) {
     </form>
     <table>
         <tr>
-            <th>Nombre</th>
-            <th>Tipo</th>
-            <th>Edad</th>
+            <th>Mascotas</th>
         </tr>
-
+        <?php
+        if (count($_SESSION["mascotas"]) > 0) {
+        ?>
+            <tr>
+                <td><?= "#" . date("d/m/Y", time()) . "#" ?></td>
+            </tr>
+        <?php
+            foreach ($_SESSION["mascotas"] as $key => $value) {
+                echo "<tr>
+                    <td>" . $key . "-" . $value['tipo'] . "-" . $value['edad'] . "</td>
+                </tr>";
+            }
+        }
+        ?>
     </table>
 </body>
 
