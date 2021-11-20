@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.button__link {
+  background-color: rgb(0, 0, 126);
+  color: white;
+  display: inline-block;
+  margin: 20px;
+  padding: 5px;
+  transition: scale();
+  transition-duration: 0.5s;
+}
+.button__link:active {
+  transform: scale(1.5);
+}
+.square {
+  background-color: red;
+  width: 300px;
+  height: 400px;
+  margin-left: 20px;
+  transition: rotate();
+  transition-duration: 10s;
+}
+.square:target {
+  transform: rotate(360deg);
+}

@@ -1,0 +1,17 @@
+.content {
+  width: 80vw;
+  height: 80vh;
+  background-color: rgb(134, 0, 0);
+  margin: auto;
+  margin-top: 5vh;
+  overflow: hidden;
+}
+.spidy {
+  transform: translateY(-20%);
+  transition: translateY();
+  transition-duration: 3s;
+  transition-timing-function: ease-in-out;
+}
+.content:hover .spidy {
+  transform: translateY(0);
+}

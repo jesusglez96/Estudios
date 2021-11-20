@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="nombre"
+      >Nombre: <input type="text" id="nombre" name="nombre"
+    /></label>
+    <label for="pwd">PWD: <input type="password" id="pwd" name="pwd" /></label>
+    <script>
+      let pwd = document.getElementById("pwd");
+      console.log(pwd);
+      console.log(pwd.value);
+      pwd.onblur = blur;
+      function blur() {
+        let v = pwd.value;
+        if (v.length < 7) alert("La contraseña es menor que 7");
+        if (v.length > 20) alert("La contraseña es mayor que 20");
+        if (v.length >= 7 && v.length <= 20)
+          alert("La contraseña está entre 7 y 20");
+      }
+    </script>
+  </body>
+</html>
