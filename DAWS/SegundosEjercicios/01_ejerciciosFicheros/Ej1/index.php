@@ -7,19 +7,8 @@ if (!isset($_SESSION["mascotas"])) {
 function existeFecha()
 {
     $fExiste = "#" . date("d/m/Y", time()) . "#" . PHP_EOL;
-    echo "<pre> fExiste ";
-    var_dump($fExiste);
-    echo "</pre>";
-
     $docu = file("mascotas.txt");
-    echo "<pre> docu ";
-    var_dump($docu);
-    echo "</pre>";
-
     $existe = in_array($fExiste, $docu);
-    echo "<pre> existe la fecha o no ";
-    var_dump($existe);
-    echo "</pre>";
 
     return $existe;
 }
@@ -35,6 +24,8 @@ if (isset($_POST["grabar"])) {
     foreach ($_SESSION["mascotas"] as $key => $value) {
         fwrite($fop, $key . "-" . $value['tipo'] . "-" . $value["edad"] . PHP_EOL);
     }
+    fclose($fop);
+
     $_SESSION["mascotas"] = [];
 }
 
@@ -54,6 +45,22 @@ if (isset($_POST["eliminar"])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table {
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        tr {
+            border-bottom: 1px solid black;
+        }
+
+        th,
+        td {
+            display: inline-block;
+            width: 100px;
+        }
+    </style>
 </head>
 
 <body>
@@ -66,19 +73,25 @@ if (isset($_POST["eliminar"])) {
         <input type="submit" name="eliminar" value="eliminar">
     </form>
     <table>
+        <thead>
+            <tr>
+                <th>Mascotas</th>
+            </tr>
+        </thead>
         <tr>
-            <th>Mascotas</th>
+            <th>Nombre</th>
+            <th>Tipo</th>
+            <th>Edad</th>
+            <th>Fecha</th>
         </tr>
         <?php
         if (count($_SESSION["mascotas"]) > 0) {
-        ?>
-            <tr>
-                <td><?= "#" . date("d/m/Y", time()) . "#" ?></td>
-            </tr>
-        <?php
             foreach ($_SESSION["mascotas"] as $key => $value) {
                 echo "<tr>
-                    <td>" . $key . "-" . $value['tipo'] . "-" . $value['edad'] . "</td>
+                    <td>$key</td>
+                    <td>" . $value['tipo'] . "</td>
+                    <td>" . $value['edad'] . "</td>
+                    <td>#" . date("d/m/Y", time()) . "#</td>
                 </tr>";
             }
         }

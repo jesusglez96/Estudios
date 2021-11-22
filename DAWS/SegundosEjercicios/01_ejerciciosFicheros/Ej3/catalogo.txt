@@ -1,0 +1,5 @@
+mesa-3.15-./img/mesa.jpg
+pantalla-10.99-./img/pantalla.jpg
+raton-2-./img/raton.jpg
+teclado-5-./img/teclado.jpg
+torre-20-./img/torre.jpg
