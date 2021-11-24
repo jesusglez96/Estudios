@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Ejercicio 82</h1>
+    <script>
+      let num = prompt("Introduzca una frase");
+      let patron = /^[\d]{3}\,\s[\d]{3}\,\s[\d]{3}\,\s[\d]{3}$/;
+
+      console.log(
+        patron.test(num)
+          ? "Tiene 3 numeros de 4 digitos separados por coma"
+          : "Test fallido"
+      );
+    </script>
+  </body>
+</html>

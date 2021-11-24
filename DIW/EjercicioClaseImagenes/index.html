@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <picture>
+      <source srcset="./img/imagen.jpg" media="(min-width: 1000px)" />
+      <source srcset="./img/imagen-1000.jpg" media="(min-width: 700px)" />
+      <img loading="lazy" src="./img/imagen-700.jpg" alt="MDN" />
+    </picture> -->
+    <picture>
+      <source
+        sizes="1920w, 1280w, 640w"
+        srcset="
+          ./img/imagen.avif      1920w,
+          ./img/imagen-1000.avif 1280w,
+          ./img/imagen-700.avif   640w
+        "
+        type="image/avif"
+      />
+      <source
+        sizes="1920w, 1280w, 640w"
+        srcset="
+          ./img/imagen.webp      1920w,
+          ./img/imagen-1000.webp 1280w,
+          ./img/imagen-700.webp   640w
+        "
+        type="image/webp"
+      />
+      <source
+        sizes="1920w, 1280w, 640w"
+        srcset="
+          ./img/imagen.jpg      1920w,
+          ./img/imagen-1000.jpg 1280w,
+          ./img/imagen-700.jpg   640w
+        "
+        type="image/jpg"
+      />
+      <img loading="lazy" src="./img/imagen-700.jpg" />
+    </picture>
+    <!-- <script>
+      if ("loading" in HTMLImageElement.prototype) {
+        console.log("El navegador soporta `lazy-loading`...");
+      } else {
+        console.log("`lazy-loading` no soportado...");
+      }
+    </script> -->
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let hora = prompt("ingresa hora en hh:mm o hh:mm:ss");
+      let patron = /^(0\d|1\d|2[0-3]):([0-5]\d)(:([0-5]\d))?$/;
+      console.log(patron.test(hora) ? "ta perfe bro" : "Test fallido");
+    </script>
+    <script>
+      let oracion = "saliendo de la casa que esta en la montaña";
+      let patron1 = /la/;
+      let vector1 = patron1.exec(oracion);
+      console.log(vector1);
+      document.write(vector1.index);
+      document.write("<br>");
+      document.write(vector1.input);
+      document.write("<br>");
+      let patron2 = /lax/;
+      let vector2 = patron2.exec(oracion);
+      console.log(vector2);
+    </script>
+  </body>
+</html>
