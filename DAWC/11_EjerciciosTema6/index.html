@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Comunidades autónomas AJAX</h1>
+      <div class="select">
+        <label for="lista__comunidad">Selecciona comunidad: </label>
+        <select name="lista__comunidad" id="lista__comunidad">
+          <option value="" disabled selected>Seleccionar</option>
+        </select>
+      </div>
+
+      <div class="select">
+        <label for="lista__provincias">Selecciona provincia: </label>
+        <select name="lista__provincias" id="lista__provincias">
+          <option value="" disabled selected>Seleccionar</option>
+        </select>
+      </div>
+
+      <button id="btn">Cancelar peticion</button>
+      <div id="texto"></div>
+    </div>
+
+    <script src="./src/function.js"></script>
+  </body>
+</html>

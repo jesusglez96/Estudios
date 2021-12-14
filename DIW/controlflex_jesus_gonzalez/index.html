@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FrontEnd</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="./css/style_cabecera.css" />
+    <link rel="stylesheet" href="./css/style_cuerpo.css" />
+  </head>
+  <body>
+    <header class="cabecera" id="inicio">
+      <nav class="navegacion">
+        <i class="fas fa-code"></i>
+        <div class="navegacion__links">
+          <a href="#inicio">Inicio</a>
+          <a href="#formacion">Planes</a>
+          <a href="#trabajo">Trabajos</a>
+          <a href="#contacto">Contactos</a>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="hero__img">
+          <img srcset="./img/dev.svg" alt="Persona programando" />
+        </div>
+        <div class="hero__text">
+          <h1>Curso de Desarrollo de FrontEnd</h1>
+          <p>HTML5, CSS3, JavaScript, React, SASS, ...</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article class="quienes_somos">
+        <div class="quienes_somos__bloque">
+          <h2>¿Quiénes somos?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
+            corporis totam tempore nostrum iste, quo modi aut eligendi nulla
+            assumenda? Saepe voluptatibus praesentium, at magnam repellat soluta
+            consectetur harum ex.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+            ullam neque dolorum asperiores, ipsum fuga at ipsa porro, qui sint
+            aut, non facere dignissimos unde rerum vitae. Reiciendis,
+            perferendis. Assumenda.
+          </p>
+          <button>Únete al curso</button>
+        </div>
+        <div class="quienes_somos__img">
+          <img srcset="./img/people.svg" alt="" />
+        </div>
+      </article>
+
+      <article class="formacion" id="formacion">
+        <h2>Planes de formación</h2>
+        <div class="tarjetas">
+          <div class="tarjetas tarjeta">
+            <div class="tarjetas tarjeta__img">
+              <img src="./img/card1.jpg" alt="" />
+            </div>
+            <h3>Plataforma educativa digital</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus, ex deleniti. Dolore perspiciatis adipisci quam,
+              architecto ut quibusdam in vitae deserunt! Aspernatur vitae
+              impedit earum placeat enim est libero vel?
+            </p>
+            <button>Entra ahora</button>
+          </div>
+          <div class="tarjetas tarjeta">
+            <div class="tarjetas tarjeta__img">
+              <img src="./img/card2.jpg" alt="" />
+            </div>
+            <h3>Clases 100% online o semipresenciales</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus, ex deleniti. Dolore perspiciatis adipisci quam,
+              architecto ut quibusdam in vitae deserunt! Aspernatur vitae
+              impedit earum placeat enim est libero vel?
+            </p>
+            <button>Entra ahora</button>
+          </div>
+          <div class="tarjetas tarjeta">
+            <div class="tarjetas tarjeta__img">
+              <img src="./img/card3.jpg" alt="" />
+            </div>
+            <h3>Tutorias personalizadas y cursos intensivos</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus, ex deleniti. Dolore perspiciatis adipisci quam,
+              architecto ut quibusdam in vitae deserunt! Aspernatur vitae
+              impedit earum placeat enim est libero vel?
+            </p>
+            <button>Entra ahora</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="suenno">
+        <h2>Hacemos tu sueño realidad</h2>
+      </article>
+
+      <article class="trabajo" id="trabajo">
+        <h2>Nuestro trabajo</h2>
+        <div class="trabajo__img__container">
+          <div class="trabajo__img"><img src="./img/img1.jpg" alt="" /></div>
+          <div class="trabajo__img"><img src="./img/img2.jpg" alt="" /></div>
+          <div class="trabajo__img"><img src="./img/img3.jpg" alt="" /></div>
+          <div class="trabajo__img"><img src="./img/img4.jpg" alt="" /></div>
+          <div class="trabajo__img"><img src="./img/img5.jpg" alt="" /></div>
+          <div class="trabajo__img"><img src="./img/img6.jpg" alt="" /></div>
+        </div>
+      </article>
+
+      <article class="experto">
+        <h2>Somos expertos en:</h2>
+        <div class="experto__img__container">
+          <div class="experto__img">
+            <img src="./img/html-5.svg" alt="" srcset="" />
+          </div>
+          <div class="experto__img">
+            <img src="./img/css-3.svg" alt="" srcset="" />
+          </div>
+          <div class="experto__img">
+            <img src="./img/javascript.svg" alt="" srcset="" />
+          </div>
+          <div class="experto__img">
+            <img src="./img/react.svg" alt="" srcset="" />
+          </div>
+        </div>
+      </article>
+
+      <article class="contacto" id="contacto">
+        <h2>Contacto</h2>
+        <form action="#">
+          <label for="nombre">Nombre</label>
+          <input type="text" value="Tu nombre" />
+          <label for="correo">Email</label>
+          <input type="text" value="Tu correo electronico" />
+          <label for="Mensaje">Mensaje</label>
+          <textarea name="area" id="area" cols="30" rows="10"></textarea>
+          <input type="submit" value="Enviar" />
+        </form>
+      </article>
+    </main>
+
+    <footer class="pie">
+      <div class="pie__img">
+        <img srcset="./img/mail.svg" alt="movil correo" />
+      </div>
+      <div class="pie__elementos">
+        <h2>Siguenos</h2>
+        <div class="pie__redes">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+        <div class="pie__enlace">
+          <a href="">Inicio</a>
+          <a href="">Sobre Nosotros</a>
+          <a href="">Trabajos</a>
+        </div>
+        <p class="pie__derechos">Derechos reservados @ Desarrollo FrontEnd</p>
+      </div>
+    </footer>
+  </body>
+</html>

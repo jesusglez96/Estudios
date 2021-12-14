@@ -1,0 +1,70 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 20px; */
+  font-size: 60%;
+}
+body {
+  /* font-size: 60%; */
+}
+p {
+  font-size: 50%;
+}
+:root {
+  /* font-size: 60%; */
+}
+.container {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  gap: 30px;
+}
+
+.img__container {
+  width: 300px;
+}
+.img {
+  width: 100%;
+  display: block;
+}
+
+.texto {
+  width: 300px;
+}
+
+.form {
+  display: flex;
+  width: 300px;
+
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  /* gap: 30px; */
+}
+.containerinp {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.inputaso {
+  flex-basis: 100px;
+}
+.label::before {
+  color: red;
+  content: "*";
+}
+.label {
+  flex-basis: 100px;
+}

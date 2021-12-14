@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header.hero {
+  background-image: url("../img/arce.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.hero .hero__descuento {
+  background-color: darkgreen;
+  flex-basis: 80px;
+  width: 25%;
+
+  padding: 10px;
+  text-align: center;
+
+  justify-self: flex-start;
+  align-self: flex-start;
+}
+.hero .hero__direccion {
+  background-color: darkgreen;
+  flex-basis: 80px;
+  width: 25%;
+
+  padding: 10px;
+  text-align: center;
+
+  justify-self: center;
+  align-self: center;
+}
+.hero .hero__hashtag {
+  background-color: darkgreen;
+  flex-basis: 80px;
+  width: 25%;
+
+  padding: 10px;
+  text-align: center;
+
+  justify-self: flex-end;
+  align-self: flex-end;
+}

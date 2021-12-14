@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Introduzca email:<br><textarea name="email" id="email" cols="30" rows="10"></textarea>
+    <button id="boton">Validar</button>
+
+    <script>
+        function inicio() {
+            document.getElementById('boton').addEventListener('click', validaemail);
+
+        }
+
+        function validaemail(ev) {
+            let texto = document.getElementById('email').value;
+
+            let email = texto.match(/\w+@([a-zA-Z_]+\.)+[a-zA-Z]{2,6}/g);
+            for (let i = 0; i < email.length; i++) {
+                console.log(email[i]);
+            }
+        }
+        addEventListener("load", inicio);
+    </script>
+</body>
+
+</html>

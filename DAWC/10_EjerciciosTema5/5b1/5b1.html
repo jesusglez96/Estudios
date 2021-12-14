@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      label,
+      input {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="procesa.php" method="post">
+      <label for="nombre">
+        Nombre:
+        <input type="text" name="nombre" id="nombre" maxlength="30" require />
+      </label>
+
+      <label for="hombre">
+        Hombre:
+        <input type="radio" value="hombre" name="sexo" id="hombre" require />
+      </label>
+      <label for="mujer">
+        Mujer:
+        <input type="radio" value="mujer" name="sexo" id="mujer" require />
+      </label>
+
+      <label for="altura">
+        Altura:
+        <input
+          type="number"
+          name="altura"
+          id="altura"
+          min="50"
+          max="210"
+          require
+        />
+      </label>
+
+      <label for="fecha">
+        Fecha de nacimiento:
+        <input type="date" name="fecha" id="fecha" require />
+      </label>
+
+      <label for="semana">
+        Semana preferente:
+        <input
+          type="week"
+          name="semana"
+          id="semana"
+          min="2021-1"
+          max="2021-12"
+        />
+      </label>
+
+      <label for="fumador" id="fumadorLabel">
+        Fumador:
+        <input type="checkbox" name="fumador" id="fumador" value="fumador" />
+      </label>
+
+      <div id="containerCigarros">
+        <label for="cigarro1">
+          0-5 <input type="radio" value="poco" name="cigarro1" id="cigarro1" />
+        </label>
+        <label for="cigarro2">
+          6-10
+          <input type="radio" value="medio" name="cigarro2" id="cigarro2" />
+        </label>
+        <label for="cigarro3">
+          Mas de 10
+          <input type="radio" value="mucho" name="cigarro3" id="cigarro3" />
+        </label>
+      </div>
+
+      <label for="observaciones">
+        Observaciones:
+        <textarea
+          name="observaciones"
+          id="observaciones"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </label>
+
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Borrar" />
+    </form>
+    <script>
+      addEventListener("load", mayorEdad);
+
+      function mayorEdad() {
+        let inputEdad = document.getElementById("fecha");
+        inputEdad.max = Date();
+      }
+
+      let fumadorCheck = document.getElementById("fumador");
+      fumadorCheck.addEventListener("change", fumador);
+
+      function fumador(ev) {
+        console.log(ev.target);
+        console.log(ev.target.checked);
+        if (ev.target.checked) {
+          let divCigarros = document.getElementById("containerCigarros");
+          divCigarros.style.display = "block";
+          //   console.log("entra");
+          //   let fumadorLabel = document.getElementById("fumadorLabel");
+          //   let cigarros = `<label for='cigarro1'>
+          //                         0-5 <input type='radio' value='poco' name='cigarro1' id='cigarro1'/>
+          //                     </label>
+          //                     <label for='cigarro2'>
+          //                         6-10 <input type='radio' value='medio' name='cigarro2' id='cigarro2'/>
+          //                     </label>
+          //                     <label for='cigarro3'>
+          //                         Mas de 10 <input type='radio' value='mucho' name='cigarro3' id='cigarro3'/>
+          //                     </label>`;
+          //   console.log(cigarros);
+          //   fumadorLabel.insertAdjacentHTML("beforeend", cigarros);
+        } else {
+          let divCigarros = document.getElementById("containerCigarros");
+          divCigarros.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

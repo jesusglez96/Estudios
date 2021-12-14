@@ -5,6 +5,9 @@
   margin: auto;
   margin-top: 5vh;
   overflow: hidden;
+
+  display: flex;
+  justify-content: space-between;
 }
 .spidy {
   transform: translateY(-20%);
@@ -14,4 +17,29 @@
 }
 .content:hover .spidy {
   transform: translateY(0);
+}
+.enlaces {
+  margin-right: 150px;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+}
+h1 {
+  color: black;
+  background-color: white;
+  box-shadow: 2px 2px 4px 1px black;
+  flex-basis: 50px;
+  width: 300px;
+  text-align: center;
+}
+a {
+  color: black;
+  background-color: white;
+  box-shadow: 2px 2px 4px 1px black;
+  flex-basis: 50px;
+  width: 300px;
+  text-align: center;
+  font-size: x-large;
 }

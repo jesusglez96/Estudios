@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="boton1">Boton 1</button>
+    <button id="boton2">Boton 2</button>
+    <div id="div1">Div 1</div>
+    <div id="div2">Div 2</div>
+    <script>
+      function manejadorEventos(ev) {
+        console.log(ev.target);
+        console.log(ev.type);
+      }
+      let btn1 = document.getElementById("boton1");
+      let btn2 = document.getElementById("boton2");
+      let dv1 = document.getElementById("div1");
+      let dv2 = document.getElementById("div2");
+      btn1.addEventListener("click", manejadorEventos);
+      btn2.addEventListener("click", manejadorEventos);
+      dv1.addEventListener("mouseover", manejadorEventos);
+      dv2.addEventListener("mouseover", manejadorEventos);
+    </script>
+  </body>
+</html>

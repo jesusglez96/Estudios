@@ -1,13 +1,13 @@
 DROP DATABASE ejercicios_9.4;
-CREATE DATABASE ejercicios_9.4;
-create table Clientes (
+CREATE DATABASE ejercicios_9_4_1;
+create table ejercicios_9_4_1.Clientes (
   dni VARCHAR(50),
   nombre VARCHAR(50),
   direccion VARCHAR(50),
   telefono VARCHAR(50)
 );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '867522486-9',
@@ -16,7 +16,7 @@ values
     '9098834425'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '050409894-2',
@@ -25,7 +25,7 @@ values
     '5398297902'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '582376515-0',
@@ -34,7 +34,7 @@ values
     '3416432946'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '418625385-4',
@@ -43,7 +43,7 @@ values
     '9911480585'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '472842443-X',
@@ -52,7 +52,7 @@ values
     '9786221814'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '354713181-2',
@@ -61,7 +61,7 @@ values
     '3003339308'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '395781784-6',
@@ -70,7 +70,7 @@ values
     '2898142427'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '001521704-3',
@@ -79,7 +79,7 @@ values
     '7486350909'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '248675828-3',
@@ -88,7 +88,7 @@ values
     '6455179745'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '566861999-0',
@@ -97,7 +97,7 @@ values
     '3141659752'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '299445948-5',
@@ -106,7 +106,7 @@ values
     '4949990517'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '698354537-0',
@@ -115,7 +115,7 @@ values
     '2769982465'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '169485969-X',
@@ -124,7 +124,7 @@ values
     '4646052922'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '681019596-3',
@@ -133,7 +133,7 @@ values
     '6527442875'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '934645534-9',
@@ -142,7 +142,7 @@ values
     '1998266165'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '939193168-5',
@@ -151,7 +151,7 @@ values
     '9793598889'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '625240182-X',
@@ -160,7 +160,7 @@ values
     '4583513340'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '275926781-4',
@@ -169,7 +169,7 @@ values
     '5693637234'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '139071895-6',
@@ -178,7 +178,7 @@ values
     '6221629754'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '069595323-0',
@@ -187,7 +187,7 @@ values
     '6176025603'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '695912975-3',
@@ -196,7 +196,7 @@ values
     '5179117264'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '192628030-X',
@@ -205,7 +205,7 @@ values
     '5047812288'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '296913566-3',
@@ -214,7 +214,7 @@ values
     '5313359425'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '950535096-1',
@@ -223,7 +223,7 @@ values
     '4374382081'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '729952154-7',
@@ -232,7 +232,7 @@ values
     '2188018517'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '342847129-6',
@@ -241,7 +241,7 @@ values
     '3931286855'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '314642471-1',
@@ -250,7 +250,7 @@ values
     '7667234905'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '225680125-X',
@@ -259,7 +259,7 @@ values
     '2648746715'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '984286979-2',
@@ -268,7 +268,7 @@ values
     '7735793815'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '913063384-2',
@@ -277,7 +277,7 @@ values
     '8926437034'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '750673972-0',
@@ -286,7 +286,7 @@ values
     '8998454027'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '334555495-X',
@@ -295,7 +295,7 @@ values
     '1087898167'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '950505868-3',
@@ -304,7 +304,7 @@ values
     '4037198507'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '687030656-7',
@@ -313,7 +313,7 @@ values
     '4082447344'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '974550841-1',
@@ -322,7 +322,7 @@ values
     '9484310272'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '931032981-5',
@@ -331,7 +331,7 @@ values
     '7471994264'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '223206419-0',
@@ -340,7 +340,7 @@ values
     '5637895553'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '906658478-5',
@@ -349,7 +349,7 @@ values
     '5814783656'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '697024678-7',
@@ -358,7 +358,7 @@ values
     '5469701312'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '244289171-9',
@@ -367,7 +367,7 @@ values
     '7287436651'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '634410943-2',
@@ -376,7 +376,7 @@ values
     '4027787504'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '888266549-6',
@@ -385,7 +385,7 @@ values
     '9801384355'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '497550673-4',
@@ -394,7 +394,7 @@ values
     '6013757835'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '213971546-2',
@@ -403,7 +403,7 @@ values
     '3826710034'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '768014463-X',
@@ -412,7 +412,7 @@ values
     '2091444805'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '941928941-9',
@@ -421,7 +421,7 @@ values
     '3231014992'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '505161571-6',
@@ -430,7 +430,7 @@ values
     '2299593692'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '398060036-X',
@@ -439,7 +439,7 @@ values
     '9341887235'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '013758710-4',
@@ -448,7 +448,7 @@ values
     '3915564127'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '670536751-2',
@@ -457,7 +457,7 @@ values
     '8696746149'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '554607156-7',
@@ -466,7 +466,7 @@ values
     '2932024680'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '866356418-X',
@@ -475,7 +475,7 @@ values
     '1998114867'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '690924193-2',
@@ -484,7 +484,7 @@ values
     '7364627919'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '280245879-5',
@@ -493,7 +493,7 @@ values
     '5807047244'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '558927006-5',
@@ -502,7 +502,7 @@ values
     '3956816467'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '891666710-0',
@@ -511,7 +511,7 @@ values
     '4211018772'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '518961806-4',
@@ -520,7 +520,7 @@ values
     '8854800295'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '745315429-4',
@@ -529,7 +529,7 @@ values
     '8683869619'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '208306619-7',
@@ -538,7 +538,7 @@ values
     '6798187277'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '335487013-3',
@@ -547,7 +547,7 @@ values
     '9737805363'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '013378988-8',
@@ -556,7 +556,7 @@ values
     '1396745641'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '928544041-X',
@@ -565,7 +565,7 @@ values
     '2198655976'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '026094128-X',
@@ -574,7 +574,7 @@ values
     '5388056341'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '841533649-7',
@@ -583,7 +583,7 @@ values
     '6723015675'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '205641263-2',
@@ -592,7 +592,7 @@ values
     '1631599868'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '070341262-0',
@@ -601,7 +601,7 @@ values
     '5013906075'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '682259400-0',
@@ -610,7 +610,7 @@ values
     '1813109396'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '235682696-3',
@@ -619,7 +619,7 @@ values
     '8628356825'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '935774326-X',
@@ -628,7 +628,7 @@ values
     '3979563476'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '796067313-6',
@@ -637,7 +637,7 @@ values
     '9652483018'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '676507876-2',
@@ -646,7 +646,7 @@ values
     '6476300460'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '774176449-7',
@@ -655,7 +655,7 @@ values
     '3942221043'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '902776189-2',
@@ -664,7 +664,7 @@ values
     '7626454090'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '096768564-8',
@@ -673,7 +673,7 @@ values
     '4412984544'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '377341125-1',
@@ -682,7 +682,7 @@ values
     '8216480757'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '356977630-1',
@@ -691,7 +691,7 @@ values
     '1578549774'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '136176562-3',
@@ -700,7 +700,7 @@ values
     '9025112119'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '062855132-0',
@@ -709,7 +709,7 @@ values
     '3449574114'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '092624974-6',
@@ -718,7 +718,7 @@ values
     '1492876822'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '972445302-2',
@@ -727,7 +727,7 @@ values
     '3945497216'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '029067189-2',
@@ -736,7 +736,7 @@ values
     '2225058507'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '328624896-7',
@@ -745,7 +745,7 @@ values
     '6256970039'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '978571148-X',
@@ -754,7 +754,7 @@ values
     '1149678874'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '521611287-1',
@@ -763,7 +763,7 @@ values
     '1929126087'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '111654533-0',
@@ -772,7 +772,7 @@ values
     '3343060842'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '677864569-5',
@@ -781,7 +781,7 @@ values
     '8988242287'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '953218374-4',
@@ -790,7 +790,7 @@ values
     '6562921931'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '356759515-6',
@@ -799,7 +799,7 @@ values
     '5834830404'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '986143850-5',
@@ -808,7 +808,7 @@ values
     '8734058383'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '775156950-6',
@@ -817,7 +817,7 @@ values
     '6836333402'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '283656624-8',
@@ -826,7 +826,7 @@ values
     '4478346733'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '989421349-9',
@@ -835,7 +835,7 @@ values
     '3437773511'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '107462546-3',
@@ -844,7 +844,7 @@ values
     '3959496794'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '806287953-4',
@@ -853,7 +853,7 @@ values
     '1641944323'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '688624745-X',
@@ -862,7 +862,7 @@ values
     '7363653304'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '009505158-9',
@@ -871,7 +871,7 @@ values
     '1778139494'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '282604713-2',
@@ -880,7 +880,7 @@ values
     '8594375475'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '095566887-5',
@@ -889,7 +889,7 @@ values
     '4095671304'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '262537773-9',
@@ -898,7 +898,7 @@ values
     '8828154335'
   );
 insert into
-  Clientes (dni, nombre, direccion, telefono)
+  ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono)
 values
   (
     '903216271-3',

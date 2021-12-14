@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="selec"
+      >Selecciona ciudad:
+      <select name="selec" id="selec">
+        <option value="Utrera">Utrera</option>
+        <option value="Los Palacios">Los Palacios</option>
+        <option value="Dos Hermanas">Dos Hermanas</option>
+      </select>
+    </label>
+    <p id="p"></p>
+    <script>
+      function seleccion(ev) {
+        let word = ev.target.value;
+        let p = document.getElementById("p");
+        p.textContent = word;
+      }
+      let selec = document.getElementById("selec");
+      selec.addEventListener("change", seleccion);
+    </script>
+  </body>
+</html>

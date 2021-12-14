@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* Contenedor global */
 .contenedor {
   max-width: 1000px;
   display: flex;
@@ -11,15 +12,18 @@
   gap: 20px;
 }
 
+/* Contenedor principal */
 .contenedor-main {
   display: flex;
   flex-direction: column;
 }
 
+/* Contenedor enlaces */
 .contenedor-aside {
   order: 2;
 }
 
+/* Contenedor servicios */
 .contenedor-servicios {
   display: flex;
   flex-direction: column;

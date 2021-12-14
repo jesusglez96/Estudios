@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Introduzca hora:<input type="text" name="hora" id="hora">
+    <button id="boton">Validar</button>
+
+    <script>
+        function inicio() {
+            document.getElementById('boton').addEventListener('click', validaHora);
+
+        }
+        // preguntar por la hora 24
+        function validaHora(ev) {
+            let texto = document.getElementById('hora').value;
+            let patron = /^([0]\d||[1]\d||[2][0-3])\:([0-5]\d)\:([0-5]\d)$/;
+            if (patron.test(texto))
+                alert('true');
+            else
+                alert('false');
+        }
+        addEventListener("load", inicio);
+    </script>
+</body>
+
+</html>

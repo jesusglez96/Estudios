@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("./../fonts/PTSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("./../fonts/OpenSans-Regular.ttf");
+}
+
+h2 {
+  font-family: "PT Sans";
+  font-size: 2.5rem;
+  color: #fc466b;
+  text-align: center;
+}
+h3 {
+  font-family: "PT Sans";
+  font-size: 1.5rem;
+  color: #3f5efb;
+  text-align: center;
+}
+p {
+  text-align: left;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 15px;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.quienes_somos {
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 50px;
+}
+
+.quienes_somos__bloque {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quienes_somos__bloque > button {
+  display: flex;
+  justify-content: center;
+  background-color: #fc466b;
+  width: 150px;
+
+  color: #fafafa;
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-align: left;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  line-height: 1.5;
+
+  transition: all;
+  transition-duration: 1s;
+}
+.quienes_somos__bloque > button:hover {
+  background-image: linear-gradient(to right, #fc466b, #3f5efb);
+}
+
+.quienes_somos__img {
+  width: 90vw;
+}
+
+.formacion {
+  background-color: #fafafa;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.tarjetas {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.tarjeta {
+  border-radius: 10px;
+  width: 300px;
+
+  box-shadow: 1px 1px 4px 2px black;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.tarjeta__img {
+  width: 100%;
+}
+
+.tarjeta > button {
+  display: flex;
+  justify-content: center;
+  background-color: #3f5efb;
+  width: 200px;
+  margin-bottom: 20px;
+  color: #fafafa;
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-align: left;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.suenno {
+  background-color: #fc466b;
+}
+.suenno > h2 {
+  color: #fafafa;
+}
+
+.trabajo {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+}
+
+.trabajo__img__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.trabajo__img {
+  height: 100px;
+  flex-basis: 100px;
+}
+
+.experto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.experto__img__container {
+  display: flex;
+  gap: 20px;
+}
+.experto__img {
+  flex-basis: 100px;
+}

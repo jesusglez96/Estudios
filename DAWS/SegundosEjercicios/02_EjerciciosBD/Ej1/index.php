@@ -1,11 +1,39 @@
 <?php
 try {
-    $conexion = new PDO("mysql:host=localhost;dbname=ejercicios_9_4;charset=utf8", "root");
+    $conexion = new PDO("mysql:host=localhost;dbname=ejercicios_9_4_1;charset=utf8", "root");
 } catch (PDOException $e) {
-    echo "Conexion fallida";
-    die("Error: " . $e->getMessage());
+    die("Error: " . $e->getMessage("Conexion fallida"));
 }
+
+if (isset($_POST["annadir"])) {
+    $dni = $_POST["dni"];
+    $nombre = $_POST["nombre"];
+    $direccion = $_POST["direccion"];
+    $telefono = $_POST["telefono"];
+
+    $conexion->query("INSERT INTO ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono) VALUES ('$dni', '$nombre', '$direccion', '$telefono')");
+    // header("refresh:0;");
+}
+/* if (isset($_POST["eliminar"])) {
+    $dni = $_POST["dni"];
+    $nombre = $_POST["nombre"];
+    $direccion = $_POST["direccion"];
+    $telefono = $_POST["telefono"];
+    
+    $conexion->query("INSERT INTO ejercicios_9_4_1.Clientes (dni, nombre, direccion, telefono) VALUES ('$dni', '$nombre', '$direccion', '$telefono')");
+    header("refresh:0;");
+} */
+// if (isset($_POST["eliminar"])) {
+//     echo "hola";
+//     $dni = $_POST["dni"];
+
+//     $conexion->query("DELETE FROM ejercicios_9_4_1.Clientes WHERE dni+'$dni'");
+//     // header("refresh:0;");
+// }
 $consulta = $conexion->query("SELECT * FROM Clientes");
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -35,25 +63,52 @@ $consulta = $conexion->query("SELECT * FROM Clientes");
         while ($registro = $consulta->fetchObject()) {
         ?>
             <tr>
-                <form action="#" method="post">
-                    <td><?= $registro->dni ?></td>
-                    <td><?= $registro->nombre ?></td>
-                    <td><?= $registro->direccion ?></td>
-                    <td><?= $registro->telefono ?></td>
-                    <input type="hidden" name="registro" value="<?= $registro->dni ?>">
-                    <td><input type="submit" value="Eliminar" name="eliminar"></td>
-                    <td><input type="submit" value="Modificar" name="modificar"></td>
-                </form>
+
+                <td><?= $registro->dni ?></td>
+                <td><?= $registro->nombre ?></td>
+                <td><?= $registro->direccion ?></td>
+                <td><?= $registro->telefono ?></td>
+
+                <td>
+                    <form action="eliminar.php" method="post"> <input type="hidden" name="dni" value="<?= $registro->dni ?>"><input type="submit" value="Eliminar" name="eliminar"></form>
+                </td>
+                <td>
+                    <form action="modificar.php" method="post"> <input type="hidden" name="dni" value="<?= $registro->dni ?>"><input type="submit" value="Modificar" name="modificar"></form>
+                </td>
+
             </tr>
+            <!-- while ($fila= $productosFiltrados->fetchObject()) {?>
+            <tr class="modo1">
+                <td><?= $fila->id ?></td>
+                <td><?= $fila->nombre ?></td>
+                <td><?= $fila->precioCompra ?></td>
+                <td><?= $fila->precioVenta ?></td>
+                <td><?= $fila->margen ?></td>
+                <td><?= $fila->stock ?></td>
+                <td>
+                    <form action="confimacionEliminado.php" method="get"> <input type="hidden" name="dni" value="<?php echo $fila->id ?>"><input type="submit" value="Eliminar" name="eliminar"></form>
+                </td>
+                <td>
+                    <form action="modificar.php" method="get"><input type="hidden" name="dni" value="<?php echo $fila->id ?>"><input type="submit" value="Modificar" name="modificar"></form>
+                </td>
+                <td>
+                    <form action="" method="post"><input type="hidden" name="id" value="<?php echo $fila->id ?>"><input type="hidden" name="stock" value="<?php echo $fila->stock ?>"> <input type="submit" value="Entrada" name="entrada"></form>
+                </td>
+                <td>
+                    <form action="" method="post"><input type="hidden" name="id" value="<?php echo $fila->id ?>"><input type="hidden" name="stock" value="<?php echo $fila->stock ?>"><input type="submit" value="Salida" name="salida"></form>
+                </td>
+            </tr> -->
         <?php
         }
         ?>
         <tr>
-            <td><input type="text" name="dni" id=""></td>
-            <td><input type="text" name="nombre" id=""></td>
-            <td><input type="text" name="direccion" id=""></td>
-            <td><input type="text" name="telefono" id=""></td>
-            <td><input type="submit" value="Añadir" name="annadir"></td>
+            <form action="#" method="post">
+                <td><input type="text" name="dni" id=""></td>
+                <td><input type="text" name="nombre" id=""></td>
+                <td><input type="text" name="direccion" id=""></td>
+                <td><input type="text" name="telefono" id=""></td>
+                <td><input type="submit" value="Añadir" name="annadir"></td>
+            </form>
         </tr>
     </table>
 </body>
