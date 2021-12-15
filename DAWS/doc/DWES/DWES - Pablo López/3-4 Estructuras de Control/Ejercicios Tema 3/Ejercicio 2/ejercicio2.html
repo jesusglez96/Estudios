@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wth=device-wth, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Mejora el ejercicio de la lotería primitiva del tema anterior. Ahora los números se seleccionan
+de un boleto al estilo “bingo” con filas y columnas, para representar los números
+seleccionados se usarán checkbox, y para el número de serie una caja de texto. Cuando se
+pulse el botón jugar, se mostrará la combinación ganadora generada aleatoriamente y los
+aciertos que ha tenido. No se usarán estructuras repetitivas ni arrays, se mostrará la
+combinación ganadora en una tabla con una sola fila y un número en cada columna.
+Se mostrará el número de aciertos que ha teno el usuario y cuánto dinero ha ganado:
+-menos de 4 aciertos: nada
+-4 aciertos: dinero vuelto
+-5 aciertos: 30 euros
+-6 aciertos: 100 euros
+-número de serie: Si se acierta se sumarán 500 euros independientemente del número de
+aciertos.
+Nota: no hace falta comprobar todos los números, solo los de la combinación ganadora, por lo
+que no se controla si el usuario selecciona más de 6 números.
+-->
+
+<form action="loteria.php" method="get">
+    <h1>¡¡¡Lotería!!!</h1>
+    Introduce una combinación de 6 números entre 1 y 49 y un número de serie entre 1 y 999.<br><br>
+    
+    <table border="1" style="border-collapse: collapse">
+        <tr>
+            <td><input type="checkbox" name="1" >1</td>
+            <td><input type="checkbox" name="2" >2</td>
+            <td><input type="checkbox" name="3" >3</td>
+            <td><input type="checkbox" name="4" >4</td>
+            <td><input type="checkbox" name="5" >5</td>
+            <td><input type="checkbox" name="6" >6</td>
+            <td><input type="checkbox" name="7" >7</td>
+            <td><input type="checkbox" name="8" >8</td>
+            <td><input type="checkbox" name="9" >9</td>
+            <td><input type="checkbox" name="10" >10</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="11" >11</td>
+            <td><input type="checkbox" name="12" >12</td>
+            <td><input type="checkbox" name="13" >13</td>
+            <td><input type="checkbox" name="14" >14</td>
+            <td><input type="checkbox" name="15" >15</td>
+            <td><input type="checkbox" name="16" >16</td>
+            <td><input type="checkbox" name="17" >17</td>
+            <td><input type="checkbox" name="18" >18</td>
+            <td><input type="checkbox" name="19" >19</td>
+            <td><input type="checkbox" name="20" >20</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="21" >21</td>
+            <td><input type="checkbox" name="22" >22</td>
+            <td><input type="checkbox" name="23" >23</td>
+            <td><input type="checkbox" name="24" >24</td>
+            <td><input type="checkbox" name="25" >25</td>
+            <td><input type="checkbox" name="26" >26</td>
+            <td><input type="checkbox" name="27" >27</td>
+            <td><input type="checkbox" name="28" >28</td>
+            <td><input type="checkbox" name="29" >29</td>
+            <td><input type="checkbox" name="30" >30</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="31" >31</td>
+            <td><input type="checkbox" name="32" >32</td>
+            <td><input type="checkbox" name="33" >33</td>
+            <td><input type="checkbox" name="34" >34</td>
+            <td><input type="checkbox" name="35" >35</td>
+            <td><input type="checkbox" name="36" >36</td>
+            <td><input type="checkbox" name="37" >37</td>
+            <td><input type="checkbox" name="38" >38</td>
+            <td><input type="checkbox" name="39" >39</td>
+            <td><input type="checkbox" name="40" >40</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="41" >41</td>
+            <td><input type="checkbox" name="42" >42</td>
+            <td><input type="checkbox" name="43" >43</td>
+            <td><input type="checkbox" name="44" >44</td>
+            <td><input type="checkbox" name="45" >45</td>
+            <td><input type="checkbox" name="46" >46</td>
+            <td><input type="checkbox" name="47" >47</td>
+            <td><input type="checkbox" name="48" >48</td>
+            <td><input type="checkbox" name="49" >49</td>
+            
+        </tr>
+    </table>
+<br>
+    Serie: <input type="number" name="serie" min="1" max="999">
+
+<br><br>
+    <input type="submit" ="Jugar">
+    
+
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+use karaoke;
+db.canciones.insertOne({"nombre": "I want to break free", "cantante": "Queen", "duracion": 3.25, "anno": 2021, "dificultad": "media"});
+
+db.reservas.insertMany([
+        {
+            "sala": 1, 
+            "Cliente": {
+                "dni": "123456789A",
+                "nombre": "Jesus Capitan Nieto",
+                "edad": 19,
+            },
+            "precio": 50,
+        },
+        {
+            "sala": 2, 
+            "Cliente": {
+                "dni": "143534589A",
+                "nombre": "Maria Luisa Croissier Gomez",
+                "edad": 24,
+            },
+            "precio": 75,
+        },
+        {
+            "sala": 3, 
+            "Cliente": {
+                "dni": "143535329B",
+                "nombre": "Jesus Gonzalez Nieto",
+                "edad": 25,
+            },
+            "precio": 25,
+        }
+    ]);
+
+db.salas.insertMany([
+    {
+        "numero": 1,
+        "grado": "normal",
+        "horario": {
+            "14:00": false,
+            "15:00": false,
+            "16:00": false,
+            "17:00": false,
+            "18:00": true,
+            "19:00": false,
+            "20:00": false,
+            "21:00": false,
+            "22:00": false,
+            "23:00": false,
+            "00:00": false,
+            "01:00": false,
+            "02:00": false,
+        }
+    },
+    {
+        "numero": 2,
+        "grado": "premium",
+        "horario": {
+            "14:00": false,
+            "15:00": false,
+            "16:00": false,
+            "17:00": false,
+            "18:00": true,
+            "19:00": false,
+            "20:00": false,
+            "21:00": false,
+            "22:00": true,
+            "23:00": false,
+            "00:00": false,
+            "01:00": false,
+            "02:00": false,
+        }
+    },
+    {
+        "numero": 3,
+        "grado": "low cost",
+        "horario": {
+            "14:00": false,
+            "15:00": false,
+            "16:00": false,
+            "17:00": false,
+            "18:00": true,
+            "19:00": false,
+            "20:00": false,
+            "21:00": true,
+            "22:00": false,
+            "23:00": false,
+            "00:00": false,
+            "01:00": false,
+            "02:00": false,
+        }
+    }
+]);
+
+//creacion array
+db.reservas.updateOne({"sala": 1}, {$set: {"usuarios":["Jose Antonio", "Pepe", "Raul"]}});
+
+db.reservas.updateOne({"sala": 2}, {$set: {"usuarios":["Maria", "Joaquin", "Triana"]}});
+
+db.reservas.updateOne({"sala": 3}, {$set: {"usuarios":["Alejandro", "Ezequiel", "Jesus"]}});

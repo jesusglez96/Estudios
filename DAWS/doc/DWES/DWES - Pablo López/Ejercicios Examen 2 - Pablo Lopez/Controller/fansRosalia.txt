@@ -1,0 +1,4 @@
+Posicion: 1 ,Nombre: Enrique ,Puntos: 4500
+Posicion: 2 ,Nombre: Pedro ,Puntos: 2000
+Posicion: 3 ,Nombre: Pablo ,Puntos: 1015
+Posicion: 4 ,Nombre: Pepe Gonzalez ,Puntos: 580

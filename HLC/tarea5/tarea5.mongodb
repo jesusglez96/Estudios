@@ -1,0 +1,32 @@
+//simple
+db.canciones.find({anno: {$gt:2000}});
+
+db.salas.find({"grado": "normal"}, {"grado": true, "numero": true});
+
+db.salas.find({"numero": {$gt: 2}}, {"_id": false, "numero": true});
+
+db.salas.find({"numero": {$gt: 2}}, {"_id": false, "numero": true});
+
+//array
+
+db.reservas.find({"usuarios": {$all:["Jesus"]}});
+
+db.reservas.find({$or: [
+        {"usuarios": "Jesus"},
+        {"usuarios": "Jose Antonio"}
+    ]});
+
+db.reservas.find({"usuarios": "Maria"}).count();
+
+db.reservas.find({$nor: [
+    {"usuarios": "Maria"},
+    {"usuarios": "Ezequiel"}
+]}, {"_id": false});
+
+//Embebido
+
+db.reservas.find({"Cliente.edad":{$lt: 21}});
+
+db.reservas.find({"Cliente.nombre":"Jesus Gonzalez Nieto"});
+
+db.salas.find({"grado":"premium","horario.15:00": true});
