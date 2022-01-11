@@ -1,0 +1,37 @@
+        let encabezados=[
+            {dia:"Lunes"},
+            {dia:"Martes"},
+            {dia:"Miércoles"},
+            {dia:"Jueves"},
+            {dia:"Viernes"}
+        ];
+        let horario=[
+            {
+                hora:"15:00-16:00",
+                asignaturas:["-","-","-","-","DWS"]
+            },
+            {
+                hora:"16:00-17:00",
+                asignaturas:["DWS","EIE","DWS","DAW","DWS"]
+            },
+            {
+                hora:"17:00-18:00",
+                asignaturas:["DWS","EIE","DWS","DAW","DWS"]
+            },
+            {
+                hora:"18:00-19:00",
+                asignaturas:["DWS","HLC","DIW","DAW","DWC"]
+            },
+            {
+                hora:"19:00-20:00",
+                asignaturas:["DIW","HLC","HLC","DWC","DWC"]
+            },
+            {
+                hora:"20:00-21:00",
+                asignaturas:["DIW","DIW","EIE","DWC","DWC"]
+            },
+            {
+                hora:"21:00-22:00",
+                asignaturas:["DIW","DIW","EIE","DWC","-"]
+            },
+        ];

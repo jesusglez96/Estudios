@@ -1,0 +1,11 @@
+//indice simple
+db.reservas.createIndex({"precio": 1});
+db.reservas.dropIndex("precio_1");
+
+//Indice compuesto
+db.canciones.createIndex({"dificultad":1, "duracion": -1});
+db.canciones.dropIndex("dificultad_1_duracion_-1");
+
+//unico
+db.reservas.createIndex({"Cliente.dni":1},{unique:true});
+db.reservas.dropIndex("Cliente.dni_1");

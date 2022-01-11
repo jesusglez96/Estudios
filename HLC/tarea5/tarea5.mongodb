@@ -29,4 +29,6 @@ db.reservas.find({"Cliente.edad":{$lt: 21}});
 
 db.reservas.find({"Cliente.nombre":"Jesus Gonzalez Nieto"});
 
+db.salas.find({"horario.21:00": true});
+
 db.salas.find({"grado":"premium","horario.15:00": true});
