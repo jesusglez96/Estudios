@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Carrito usando <b>localStorage</b></h1>
+    </header>
+    <main>
+      <article id="info">
+        <p>Añade nuevos articulos al carrito.</p>
+        <p>Cierra la ventana y vuelve a abrirla para comprobar el resultado.</p>
+      </article>
+      <article id="form">
+        <label for="articulo">Articulo: </label>
+        <input type="text" id="txt" />
+        <label for="cantidad">Cantidad: </label>
+        <input type="text" id="num" />
+        <button id="annadir">Añadir</button>
+        <button id="vaciar">Vaciar carrito</button>
+      </article>
+      <article id="resultado"></article>
+    </main>
+    <script src="./logic.js"></script>
+  </body>
+</html>

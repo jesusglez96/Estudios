@@ -1,0 +1,55 @@
+.recetario {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.receta {
+  background-color: whitesmoke;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 2px 2px 6px 2px black;
+  padding: 10px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 8px;
+}
+.receta__nombre {
+  grid-column: 1/-1;
+}
+.receta__img {
+  grid-column: 1/2;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+.receta__img img {
+  max-width: 100%;
+  display: block;
+}
+
+.receta__ingredientes {
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+
+  grid-column: 2/3;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.receta__info {
+  grid-column: 3/-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.info__alergias {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

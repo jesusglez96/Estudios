@@ -1,0 +1,23 @@
+.header {
+  padding: 30px;
+  background-color: dodgerblue;
+  text-align: center;
+}
+
+.nav {
+  background-color: #642b73;
+
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.enlace_navegacion {
+  text-decoration: none;
+  color: white;
+}
+.navegacion_enlace--activo {
+  color: #ffce00;
+}

@@ -1,0 +1,51 @@
+main {
+  background-color: floralwhite;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 100vh;
+}
+
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: blanchedalmond;
+}
+
+h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: coral;
+}
+h4 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkolivegreen;
+  text-align: center;
+}
+h5 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: chocolate;
+  text-align: center;
+}
+
+p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: chocolate;
+}
+label {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: blanchedalmond;
+}
+
+.principio {
+  background-color: darkolivegreen;
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,11 @@
+@use "partial";
+
+body {
+  background-color: partial.$color--fondo;
+  font-size: partial.$fuente--defecto;
+}
+
+h1 {
+  font-size: partial.$fuente--h1;
+  color: partial.$color--h1;
+}

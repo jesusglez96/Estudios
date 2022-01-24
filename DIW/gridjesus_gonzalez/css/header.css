@@ -1,0 +1,32 @@
+.cabecera > h1 > b {
+  color: #037bc0;
+}
+
+.navegacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.navegacion__enlace {
+  text-decoration: none;
+  color: currentColor;
+}
+.hero {
+  height: 25rem;
+
+  background: url("./../img/principal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .navegacion {
+    flex-direction: row;
+  }
+  .hero {
+    height: 55rem;
+  }
+}

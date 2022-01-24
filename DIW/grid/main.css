@@ -1,0 +1,47 @@
+.main {
+  background-color: dodgerblue;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.main h3 {
+  grid-column: 1/-1;
+  justify-self: center;
+  margin-top: 30px;
+  color: #ffce00;
+}
+.producto {
+  background-color: #642b73;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.producto_img {
+  max-width: 100%;
+  display: block;
+}
+.precio,
+.nombre {
+  margin: 0;
+  text-align: center;
+}
+
+.precio {
+  font-size: larger;
+  margin-top: 0;
+  color: #ffce00;
+}
+
+.nombre {
+  font-size: xx-large;
+  color: white;
+}
+
+.grande {
+  grid-column: 1/-1;
+}
+.grande_img {
+  max-width: 100%;
+}

@@ -7,7 +7,7 @@ function inicio() {
   xhr.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
       let registros = JSON.parse(this.responseText);
-
+      // console.log(this.responseText);
       let newOption = "<option value='' disabled selected>Seleccionar</option>";
       for (const key in registros) {
         newOption += `<option value='${key}'>${registros[key]}</option>`;
