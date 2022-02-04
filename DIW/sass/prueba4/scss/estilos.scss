@@ -1,0 +1,10 @@
+@use "variables";
+ul {
+  color: nth(variables.$colores, 1);
+  ul {
+    color: nth(variables.$colores, 3);
+    ul {
+      color: nth(variables.$colores, 2);
+    }
+  }
+}

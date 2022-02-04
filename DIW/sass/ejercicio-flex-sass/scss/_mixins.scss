@@ -1,0 +1,45 @@
+//Principal
+@use "variables" as var;
+
+@mixin box-sizing($box-model) {
+  box-sizing: $box-model;
+}
+
+@mixin boton($color_back, $color_font) {
+  background-color: $color_back;
+  color: $color_font;
+  display: block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+@mixin imagen-fondo($ruta) {
+  background-image: url($ruta);
+  background-repeat: no-repeat;
+  // background-position: center center;
+}
+
+//Media queries
+@mixin mobile() {
+  @media screen and (min-width: var.$small) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media screen and (min-width: var.$medium) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: var.$big) {
+    @content;
+  }
+}
+
+@mixin gradiente($color1, $color2) {
+  background-image: linear-gradient(to right, $color1, $color2);
+}

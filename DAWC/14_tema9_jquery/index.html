@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $("#tabs").tabs();
+      });
+    </script>
+    <link rel="stylesheet" href="./estilos.css" />
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script> -->
+  </head>
+  <body>
+    <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1">Sevilla</a></li>
+        <li><a href="#tabs-2">Madrid</a></li>
+        <li><a href="#tabs-3">Vigo</a></li>
+      </ul>
+      <div class="tabs" id="tabs-1"></div>
+      <div class="tabs" id="tabs-2"></div>
+      <div class="tabs" id="tabs-3"></div>
+    </div>
+    <div id="cargando"></div>
+    <script src="./logic.js"></script>
+  </body>
+</html>

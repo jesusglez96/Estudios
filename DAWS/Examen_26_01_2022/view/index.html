@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="./../controller/consulta.php" method="get">
+      <label for="titulo">Titulo: </label>
+      <input type="text" name="titulo" />
+      <label for="likes">Likes: </label>
+      <input type="text" name="likes" />
+      <input type="submit" value="Consultar" name="consulta_normal" />
+    </form>
+    <form action="./../controller/consulta.php" method="post">
+      <label for="token">Token: </label>
+      <input type="text" name="token" />
+      <label for="token">Contenido: </label>
+      <input type="text" name="contenido" />
+      <input type="submit" value="Consultar" name="consulta_premium" />
+    </form>
+  </body>
+</html>

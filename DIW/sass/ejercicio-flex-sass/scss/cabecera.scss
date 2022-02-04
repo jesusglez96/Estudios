@@ -1,0 +1,246 @@
+@use "variables" as var;
+@use "mixins" as mix;
+@use "sass:color";
+
+html {
+  @include mix.box-sizing(border-box);
+}
+
+*,
+*:after,
+*:before {
+  @include mix.box-sizing(inherit);
+}
+
+body {
+  font-family: var.$fuente_principal;
+}
+.contenedor {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+//header
+.oculto {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .logo {
+    padding: 1.4rem 0;
+  }
+}
+
+//Carrito
+.carrito-compras {
+  position: relative;
+
+  &:hover .contenido {
+    background-color: var.$gris;
+    display: block;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    max-width: 400px;
+
+    img {
+      max-width: 150px;
+    }
+
+    .boton {
+      @include mix.boton(var.$principal, var.$blanco);
+    }
+  }
+}
+
+//hero
+.hero {
+  min-height: 24rem;
+  color: var.$blanco;
+
+  @include mix.imagen-fondo("../img/hero.jpg");
+  background-position: center center;
+
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  .contenido-hero {
+    flex: 1;
+
+    h2 {
+      font-size: 2.4rem;
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    form {
+      position: relative;
+
+      @include mix.tablet() {
+        width: 40%;
+      }
+
+      input[type="submit"] {
+        position: absolute;
+
+        top: 0;
+        right: 0;
+
+        @include mix.imagen-fondo("../img/lupa.png");
+        background-position: center center;
+
+        height: 3rem;
+        width: 3rem;
+
+        display: block;
+        border: none;
+        cursor: pointer;
+        text-indent: -9999999px;
+      }
+
+      input[type="text"] {
+        height: 3rem;
+        width: 100%;
+      }
+    }
+  }
+}
+
+//Barra de iconos
+.barra {
+  min-height: 6rem;
+  color: var.$blanco;
+  padding: 1rem;
+  @include mix.gradiente(var.$secundario, var.$terciario);
+
+  display: flex;
+  align-items: center;
+
+  .iconos {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    @include mix.desktop() {
+      flex-direction: row;
+    }
+
+    .icono {
+      flex: 1;
+      background-size: 2.4rem;
+      text-align: center;
+
+      background-position: 5% center;
+      @include mix.tablet() {
+        background-position: 20% center;
+      }
+      @include mix.desktop() {
+        background-position: left center;
+      }
+
+      &.icono1 {
+        @include mix.imagen-fondo("../img/icono1.png");
+      }
+
+      &.icono2 {
+        @include mix.imagen-fondo("../img/icono2.png");
+      }
+
+      &.icono3 {
+        @include mix.imagen-fondo("../img/icono3.png");
+      }
+    }
+  }
+}
+
+//Cursos
+.cursos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .curso {
+    .imagen-curso {
+      width: 100%;
+    }
+
+    flex: 0 1 calc(50% - 1rem);
+    border: 1px solid color.scale(var.$gris, $lightness: -40%); //color.scale(var.$gris, $lightness : -40%)
+    margin-bottom: 1rem;
+
+    @include mix.tablet() {
+      flex: 0 1 calc(33% - 1rem);
+    }
+    @include mix.desktop() {
+      flex: 0 1 calc(25% - 1rem);
+    }
+
+    .info-curso {
+      padding: 1rem;
+
+      h4 {
+        margin: 0;
+        font-size: 1.2rem;
+      }
+
+      .precio {
+        display: flex;
+        justify-content: space-between;
+
+        .regular {
+          text-decoration: line-through;
+          color: red;
+        }
+
+        .oferta {
+          font-size: 1.3rem;
+          font-weight: 700;
+          color: green;
+        }
+      }
+      .boton {
+        @include mix.boton(var.$secundario, var.$blanco);
+      }
+    }
+  }
+}
+
+//Footer
+.footer {
+  border: 1px solid color.scale(var.$gris, $lightness: -40%); //color.scale(var.$gris, $lightness : -40%)
+  margin-top: 1rem;
+  padding-top: 2rem;
+
+  .contenedor-footer {
+    display: flex;
+    flex-direction: column;
+
+    @include mix.mobile() {
+      flex-direction: row;
+    }
+    .menu {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+      flex: 1;
+
+      @include mix.desktop() {
+        flex: 0 1 calc(30% - 1rem);
+      }
+
+      a {
+        color: var.$negro;
+        text-decoration: none;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

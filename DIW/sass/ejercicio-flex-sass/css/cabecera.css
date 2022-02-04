@@ -1,0 +1,235 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.contenedor {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.oculto {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header .logo {
+  padding: 1.4rem 0;
+}
+
+.carrito-compras {
+  position: relative;
+}
+.carrito-compras:hover .contenido {
+  background-color: #f2f2f2;
+  display: block;
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  max-width: 400px;
+}
+.carrito-compras:hover .contenido img {
+  max-width: 150px;
+}
+.carrito-compras:hover .contenido .boton {
+  background-color: #33c3f0;
+  color: #ffffff;
+  display: block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.hero {
+  min-height: 24rem;
+  color: #ffffff;
+  background-image: url("../img/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.hero .contenido-hero {
+  flex: 1;
+}
+.hero .contenido-hero h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.hero .contenido-hero p {
+  font-size: 1.2rem;
+}
+.hero .contenido-hero form {
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .hero .contenido-hero form {
+    width: 40%;
+  }
+}
+.hero .contenido-hero form input[type=submit] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("../img/lupa.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 3rem;
+  width: 3rem;
+  display: block;
+  border: none;
+  cursor: pointer;
+  text-indent: -9999999px;
+}
+.hero .contenido-hero form input[type=text] {
+  height: 3rem;
+  width: 100%;
+}
+
+.barra {
+  min-height: 6rem;
+  color: #ffffff;
+  padding: 1rem;
+  background-image: linear-gradient(to right, #741d51, #e44e52);
+  display: flex;
+  align-items: center;
+}
+.barra .iconos {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+@media screen and (min-width: 1024px) {
+  .barra .iconos {
+    flex-direction: row;
+  }
+}
+.barra .iconos .icono {
+  flex: 1;
+  background-size: 2.4rem;
+  text-align: center;
+  background-position: 5% center;
+}
+@media screen and (min-width: 768px) {
+  .barra .iconos .icono {
+    background-position: 20% center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .barra .iconos .icono {
+    background-position: left center;
+  }
+}
+.barra .iconos .icono.icono1 {
+  background-image: url("../img/icono1.png");
+  background-repeat: no-repeat;
+}
+.barra .iconos .icono.icono2 {
+  background-image: url("../img/icono2.png");
+  background-repeat: no-repeat;
+}
+.barra .iconos .icono.icono3 {
+  background-image: url("../img/icono3.png");
+  background-repeat: no-repeat;
+}
+
+.cursos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cursos .curso {
+  flex: 0 1 calc(50% - 1rem);
+  border: 1px solid #919191;
+  margin-bottom: 1rem;
+}
+.cursos .curso .imagen-curso {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .cursos .curso {
+    flex: 0 1 calc(33% - 1rem);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cursos .curso {
+    flex: 0 1 calc(25% - 1rem);
+  }
+}
+.cursos .curso .info-curso {
+  padding: 1rem;
+}
+.cursos .curso .info-curso h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+.cursos .curso .info-curso .precio {
+  display: flex;
+  justify-content: space-between;
+}
+.cursos .curso .info-curso .precio .regular {
+  text-decoration: line-through;
+  color: red;
+}
+.cursos .curso .info-curso .precio .oferta {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: green;
+}
+.cursos .curso .info-curso .boton {
+  background-color: #741d51;
+  color: #ffffff;
+  display: block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer {
+  border: 1px solid #919191;
+  margin-top: 1rem;
+  padding-top: 2rem;
+}
+.footer .contenedor-footer {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 480px) {
+  .footer .contenedor-footer {
+    flex-direction: row;
+  }
+}
+.footer .contenedor-footer .menu {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+@media screen and (min-width: 1024px) {
+  .footer .contenedor-footer .menu {
+    flex: 0 1 calc(30% - 1rem);
+  }
+}
+.footer .contenedor-footer .menu a {
+  color: #000000;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+/*# sourceMappingURL=cabecera.css.map */
