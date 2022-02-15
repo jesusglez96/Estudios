@@ -1,0 +1,4 @@
+Raton-6-raton.png
+Teclado-11-teclado.png
+Monitor-80-monitor.png
+Joystick-33-joystick.png
