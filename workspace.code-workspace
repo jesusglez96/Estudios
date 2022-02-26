@@ -8,7 +8,8 @@
     "files.associations": {
       "*.module": "php"
     },
-    "livePreview.defaultPreviewPath": "/DAWC/05_EjerciciosDeRepaso/buscarPosiciones.html"
+    "livePreview.defaultPreviewPath": "/DAWC/05_EjerciciosDeRepaso/buscarPosiciones.html",
+    "darkSynthwave84.brightness": 1
   },
   "launch": {
     "configurations": [

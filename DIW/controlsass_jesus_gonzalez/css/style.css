@@ -1,0 +1,300 @@
+@font-face {
+  font-family: "Lato";
+  src: url("./../fonts/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "Italianno";
+  src: url("./../fonts/Italianno-Regular.ttf");
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato";
+  background-color: #f8f8f8;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  color: #e082a8;
+}
+
+p {
+  font-size: 2rem;
+  color: #e082a8;
+}
+
+.italianno {
+  font-family: "Italianno";
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.header .img {
+  max-width: 200px;
+}
+.header .iconos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .iconos .icono {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.nav {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #7bd1d7;
+  gap: 10px;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.nav--enlace {
+  color: #f8f8f8;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.hero__img {
+  margin: auto;
+  padding: 20px;
+  max-width: 768px;
+}
+@media screen and (min-width: 768px) {
+  .hero__img {
+    flex-direction: row;
+    max-width: 800px;
+  }
+}
+.hero__img img {
+  box-shadow: 0px 6px 6px 2px grey;
+}
+
+.bienvenido {
+  text-align: center;
+  min-height: 200px;
+}
+.bienvenido h2 {
+  margin-top: 0;
+}
+.bienvenido p:last-child {
+  color: grey;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.main .options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .main .options {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 100px;
+  }
+}
+.main .options .option {
+  padding: 10px;
+}
+.main .options .option__img {
+  border: 3px solid white;
+  max-width: 768px;
+}
+.main .options .option__body {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.main .options .option__body h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.main .options .option__body a {
+  background-color: #e082a8;
+  color: #f8f8f8;
+  display: block;
+  background-color: #e082a8;
+  color: #f8f8f8;
+  padding: 10px;
+  min-width: 200px;
+  align-self: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+.main .options .option__body a:hover {
+  background-color: #ff0f6f;
+}
+.main .horario {
+  color: #f8f8f8;
+  background-color: #7bd1d7;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+@media screen and (min-width: 768px) {
+  .main .horario {
+    flex-direction: row;
+  }
+}
+.main .horario__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.main .horario__info p {
+  color: #f8f8f8;
+}
+@media screen and (min-width: 768px) {
+  .main .horario__info {
+    gap: 20px;
+    align-items: flex-end;
+  }
+}
+.main .horario__info--horas {
+  padding: 10px;
+  background-color: #e082a8;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (min-width: 768px) {
+  .main .horario__info--horas {
+    max-width: 768px;
+    min-width: 400px;
+  }
+}
+.main .horario__info--horas .title-dia {
+  grid-column: 1/2;
+}
+.main .horario__info--horas .title-de {
+  grid-column: 2/3;
+}
+.main .horario__info--horas .titlehasta {
+  grid-column: 3/-1;
+}
+.main .horario__info--horas-hora {
+  background-color: #7bd1d7;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.main .horario__info--horas-hora .dia {
+  grid-column: 1/2;
+}
+.main .horario__info--horas-hora .de {
+  grid-column: 2/3;
+}
+.main .horario__info--horas-hora .hasta {
+  grid-column: 3/-1;
+}
+.main .horario__info--horas-hora .cerrado {
+  grid-column: 2/-1;
+}
+.main .horario__img {
+  flex: 1;
+  background-image: url("./../img/bg_horarios.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  flex-basis: 400px;
+}
+@media screen and (min-width: 768px) {
+  .main .horario__img {
+    min-width: 50%;
+  }
+}
+.main .productos {
+  display: flex;
+  flex-direction: column;
+}
+.main .productos__header {
+  text-align: center;
+}
+.main .productos__header h2 {
+  margin-top: 0;
+}
+.main .productos__header .producto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main .productos__header .producto__info {
+  display: flex;
+  flex-direction: column;
+}
+.main .productos__header .producto__info p {
+  color: black;
+}
+.main .productos__header .producto__info--precio {
+  color: grey;
+  font-size: x-large;
+}
+.main .productos__header .producto1 {
+  background-image: url("./../img/producto_01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+.main .productos__header .producto2 {
+  background-image: url("./../img/producto_02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+.main .productos__header .producto3 {
+  background-image: url("./../img/producto_03.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */

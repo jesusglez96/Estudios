@@ -1,0 +1,22 @@
+<div class="container w-25">
+  <div class="row mt-2">
+    <h1 class="text-center text-warning">Credito: {{ credito }}€</h1>
+  </div>
+  <div class="row mt-2">
+    <div class="col">
+      <img class="img-fluid" src="assets/img/{{ foto1 }}" alt="" />
+    </div>
+    <div class="col">
+      <img class="img-fluid" src="assets/img/{{ foto2 }}" alt="" />
+    </div>
+    <div class="col">
+      <img class="img-fluid" src="assets/img/{{ foto3 }}" alt="" />
+    </div>
+  </div>
+  <div class="row mt-2">
+    <button class="btn btn-success" (click)="jugar()">JUGAR!</button>
+  </div>
+  <div class="row mt-2" *ngIf="saldo > 0">
+    <p class="text-center text-warning">PREMIO: {{ saldo }}</p>
+  </div>
+</div>

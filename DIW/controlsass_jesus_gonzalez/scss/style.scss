@@ -1,0 +1,297 @@
+@use "variables" as var;
+@use "mixins" as mix;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var.$fuente-principal;
+  background-color: var.$color-fondo;
+}
+
+h1 {
+  font-size: var.$h1;
+}
+h2 {
+  font-size: var.$h2;
+}
+h3 {
+  font-size: var.$h3;
+  color: var.$color-secundario;
+}
+p {
+  font-size: var.$p;
+  color: var.$color-secundario;
+}
+.italianno {
+  font-family: "Italianno";
+  margin-bottom: 0;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  @include mix.desktop() {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .img {
+    max-width: 200px;
+  }
+  .iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icono {
+      max-width: 20px;
+      max-height: 20px;
+    }
+  }
+}
+
+.nav {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var.$color-principal;
+  gap: 10px;
+
+  @include mix.desktop() {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &--enlace {
+    color: var.$color-fondo;
+    text-decoration: none;
+    font-size: var.$resto;
+  }
+}
+
+.hero {
+  &__img {
+    margin: auto;
+    padding: 20px;
+    max-width: var.$media-point;
+    @include mix.desktop() {
+      flex-direction: row;
+      max-width: 800px;
+    }
+    img {
+      box-shadow: 0px 6px 6px 2px grey;
+    }
+  }
+}
+
+.bienvenido {
+  text-align: center;
+  min-height: 200px;
+  h2 {
+    margin-top: 0;
+  }
+  p:last-child {
+    color: grey;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //   position: relative;
+    @include mix.desktop() {
+      flex-direction: row;
+      justify-content: center;
+      margin: 0 100px;
+    }
+    .option {
+      padding: 10px;
+      &__img {
+        border: 3px solid white;
+        max-width: var.$media-point;
+        // @include mix.transition(transform);
+        // &:hover {
+        //   //   @include mix.transform(scale(1.5rem));
+        //   @include mix.transform(rotate(1.5rem));
+        // }
+      }
+      &__body {
+        background-color: var.$color-fondo;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        h2 {
+          margin-top: 0;
+          margin-bottom: 10px;
+        }
+
+        a {
+          @include mix.boton(var.$color-secundario, var.$color-fondo);
+          @include mix.transition(background-color);
+          &:hover {
+            background-color: #ff0f6f;
+          }
+        }
+      }
+    }
+  }
+
+  .horario {
+    color: var.$color-fondo;
+    background-color: var.$color-principal;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    @include mix.desktop() {
+      flex-direction: row;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+
+      p {
+        color: var.$color-fondo;
+      }
+      @include mix.desktop() {
+        gap: 20px;
+        align-items: flex-end;
+      }
+      &--horas {
+        // max-width: var.$media-point;
+        // min-width: 400px;
+        padding: 10px;
+        background-color: var.$color-secundario;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        @include mix.desktop() {
+          max-width: var.$media-point;
+          min-width: 400px;
+        }
+
+        .title {
+          &-dia {
+            grid-column: 1/2;
+          }
+          &-de {
+            grid-column: 2/3;
+          }
+          &hasta {
+            grid-column: 3/-1;
+          }
+        }
+
+        &-hora {
+          background-color: var.$color-principal;
+          grid-column: 1/-1;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          .dia {
+            grid-column: 1/2;
+          }
+          .de {
+            grid-column: 2/3;
+          }
+          .hasta {
+            grid-column: 3/-1;
+          }
+          .cerrado {
+            grid-column: 2/-1;
+          }
+        }
+      }
+    }
+
+    &__img {
+      flex: 1;
+      @include mix.imagen_fondo("./../img/bg_horarios.jpg");
+      background-position: center center;
+      background-size: cover;
+      flex-basis: 400px;
+
+      @include mix.desktop() {
+        min-width: 50%;
+      }
+    }
+  }
+
+  .productos {
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+      text-align: center;
+      h2 {
+        margin-top: 0;
+      }
+
+      .producto {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &__info {
+          display: flex;
+          flex-direction: column;
+
+          p {
+            color: black;
+          }
+
+          &--precio {
+            color: grey;
+            font-size: x-large;
+          }
+        }
+        // &__img {
+
+        // }
+      }
+      .producto1 {
+        @include mix.imagen_fondo("./../img/producto_01.jpg");
+        background-size: cover;
+        width: 100px;
+        height: 100px;
+      }
+      .producto2 {
+        @include mix.imagen_fondo("./../img/producto_02.jpg");
+        background-size: cover;
+
+        width: 100px;
+        height: 100px;
+      }
+      .producto3 {
+        @include mix.imagen_fondo("./../img/producto_03.jpg");
+        background-size: cover;
+
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}

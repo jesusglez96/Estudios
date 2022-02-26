@@ -1,0 +1,31 @@
+@use "variables" as var;
+
+@mixin boton($color_back, $color_font) {
+  background-color: $color_back;
+  color: $color_font;
+  display: block;
+  background-color: var.$color-secundario;
+  color: var.$color-fondo;
+  padding: 10px;
+  min-width: 200px;
+  align-self: center;
+  text-decoration: none;
+}
+
+@mixin imagen-fondo($ruta) {
+  background-image: url($ruta);
+  background-repeat: no-repeat;
+}
+
+@mixin desktop {
+  @media screen and (min-width: var.$media-point) {
+    @content;
+  }
+}
+
+@mixin transition($what: all, $length: 0.3s, $easing: ease-in-out) {
+  transition: $what $length $easing;
+}
+@mixin transform($args) {
+  transform: $args;
+}

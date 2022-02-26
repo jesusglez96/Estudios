@@ -1,0 +1,68 @@
+<form
+  class="p-2 d-flex flex-column gap-2"
+  [formGroup]="this.formAlumno"
+  (ngSubmit)="nuevoAlumno()"
+>
+  <div>
+    <label class="form-label" for="name">Nombre: </label>
+    <input
+      type="text"
+      formControlName="nombre"
+      class="form-control"
+      name="nombre"
+      placeholder="ej. Pepe"
+    />
+
+    <span class="text-danger" *ngIf="formAlumno.controls.nombre.errors">
+      El nombre no puede quedar vacío</span
+    >
+  </div>
+  <div>
+    <label class="form-label" for="email">Email: </label>
+    <input
+      type="email"
+      formControlName="mail"
+      class="form-control"
+      name="mail"
+      placeholder="ej. ejemplo@angular.com"
+    />
+    <span class="text-danger" *ngIf="formAlumno.controls.mail.errors">
+      El email no puede quedar vacío o debe ser un email válido</span
+    >
+  </div>
+
+  <div>
+    <label class="form-label" for="curso">Curso: </label>
+    <select formControlName="curso" name="curso" id="curso" name="curso">
+      <option value="1º SMR">1º SMR</option>
+      <option value="2º SMR">2º SMR</option>
+      <option value="1º DAW">1º DAW</option>
+      <option value="2º DAW">2º DAW</option>
+    </select>
+    <div>
+      <span class="text-danger" *ngIf="formAlumno.controls.ratio.errors">
+        El ratio no puede quedar vacío</span
+      >
+    </div>
+  </div>
+  <div>
+    <label for="observaciones">Observaciones: </label>
+    <textarea
+      formControlName="observaciones"
+      name="observaciones"
+      id="observaciones"
+      cols="30"
+      rows="10"
+    ></textarea>
+  </div>
+  <div>
+    <button
+      class="mt-2 btn btn-primary d-flex justify-content-center align-items-center p-2"
+      type="submit"
+      value="Guardar"
+      [disabled]="formAlumno.invalid"
+    >
+      Añadir
+    </button>
+  </div>
+</form>

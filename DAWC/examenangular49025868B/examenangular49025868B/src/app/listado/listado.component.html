@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div scope="col"><p>Nombre</p></div>
+    <div scope="col"><p>Email</p></div>
+    <div scope="col"><p>Curso</p></div>
+    <div scope="col"><p>Repetidor</p></div>
+  </div>
+  <div class="row" *ngfor="let alumno of alumnos">
+    <div class="col">
+      <p>{{ alumno.nombre }}</p>
+    </div>
+    <div class="col">
+      <p>{{ alumno.mail }}</p>
+    </div>
+    <div class="col">
+      <p>{{ alumno.curso }}</p>
+    </div>
+    <div class="col">
+      <p>{{ alumno.repetidor }}</p>
+    </div>
+  </div>
+</div>

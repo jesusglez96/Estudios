@@ -1,0 +1,15 @@
+<div *ngIf="articulos != null; else espera" class="cielo">
+  <h3>{{ articulos.name }}</h3>
+  <div class="foto">
+    <img
+      src="http://openweathermap.org/img/wn/{{ articulos.weather[0].icon }}.png"
+    />
+  </div>
+</div>
+<p>Cielo: {{ articulos.weather[0].main }}</p>
+<p>Cielo detallado: {{ articulos.weather[0].description }}</p>
+<p>Temperatura: {{ articulos.main.temp }}ºC</p>
+<p>Temperatura maxima: {{ articulos.main.temp_max }}ºC</p>
+<p>Temperatura minima: {{ articulos.main.temp_min }}ºC</p>
+<p>Humedad: {{ articulos.main.humidity }}%</p>
+<ng-template #espera>Esperando datos...</ng-template>

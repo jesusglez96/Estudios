@@ -1,0 +1,26 @@
+//Colores
+$color-principal: #7bd1d7;
+$color-secundario: #e082a8;
+$color-fondo: #f8f8f8;
+
+//Tamaños de letras
+$h1: 4rem;
+$h2: 3.2rem;
+$h3: 2.4rem;
+$p: 2rem;
+$resto: 1.6rem;
+
+//Fuentes
+@font-face {
+  font-family: "Lato";
+  src: url("./../fonts/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "Italianno";
+  src: url("./../fonts/Italianno-Regular.ttf");
+}
+$fuente-principal: "Lato";
+$fuente-secundaria: "Italianno";
+
+//Punto Media
+$media-point: 768px;
